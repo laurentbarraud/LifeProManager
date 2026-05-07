@@ -6,7 +6,7 @@ It includes birthday reminders and topic-based lists.
 This fork is the actively maintained version, as the original co-author has stopped development.
 
 [![Release](https://img.shields.io/badge/release-stable-64B07B)](https://github.com/laurentbarraud/LifeProManager/releases)
-[![Downloads](https://img.shields.io/github/downloads/laurentbarraud/LifeProManager/V1.8.0.1/total?color=88aacc&style=flat)](https://github.com/laurentbarraud/LifeProManager/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/laurentbarraud/LifeProManager/latest/total?color=88aacc&style=flat)](https://github.com/laurentbarraud/LifeProManager/releases/latest)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/laurentbarraud/LifeProManager/refs/heads/master/LifeProManager/doc/main-window.jpg"
@@ -30,7 +30,7 @@ This fork is the actively maintained version, as the original co-author has stop
 - 🎂 Birthday calendar listing all names and the age they’ll reach this year
 - 📤 Export tasks to a clean, date‑sorted HTML page
 - 🪟 Responsive main window with a sliding right panel and persistent user‑defined width
-- 🌐 Localized in English, French and Spanish — with instant language switching
+- 🌐 Localized in English, French and Spanish.
 
 (the MonthCalendar control follows the OS culture settings, as per WinForms design).
 
@@ -43,4 +43,4 @@ This fork is the actively maintained version, as the original co-author has stop
 Go to the [Releases](https://github.com/laurentbarraud/LifeProManager/releases) section to download a ready-to-use installer,  
 designed for x64-based Windows systems (Windows 7 and above). 
 
-If you find this project useful or inspiring, consider starring the repository — it’s always appreciated.
+If this project helps you or sparks ideas, feel free to drop a star — it's always appreciated.

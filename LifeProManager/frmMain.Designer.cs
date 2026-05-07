@@ -89,7 +89,7 @@
             this.ilsTabs.TransparentColor = System.Drawing.Color.Transparent;
             this.ilsTabs.Images.SetKeyName(0, "calendar.png");
             this.ilsTabs.Images.SetKeyName(1, "topic.png");
-            this.ilsTabs.Images.SetKeyName(2, "validate-filled.png");
+            this.ilsTabs.Images.SetKeyName(2, "validated-tasks.png");
             this.ilsTabs.Images.SetKeyName(3, "settings.png");
             // 
             // pnlContainer
