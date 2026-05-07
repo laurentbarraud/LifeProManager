@@ -310,15 +310,15 @@
     <value>espagnol</value>
   </data>
   <data name="lblLicenceText" xml:space="preserve">
-    <value>Utilise des portions de code et des éléments UX par David Rossy.
-Versions alpha pré-1.0 testées par Julien Terrapon.
+    <value>Utilise des portions de code et des éléments UI par David Rossy.
+Versions pré-1.0 testées par Julien Terrapon.
 
 Ce produit a été initialement développé dans un contexte éducatif,
 pour l'apprentissage de la programmation orientée objet.
 C’est un logiciel libre et fourni en l’état.
 
 
-Version 1.8.0.1 - avril 2026
+Version 1.8 - mai 2026
 Développé par Laurent Barraud.</value>
   </data>
   <data name="taskDescriptionFontSizeText" xml:space="preserve">

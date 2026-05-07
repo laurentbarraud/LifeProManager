@@ -310,8 +310,8 @@
     <value>Español</value>
   </data>
   <data name="lblLicenceText" xml:space="preserve">
-    <value>Utiliza partes de código y elementos de UX de David Rossy.
-Las versiones alfa anteriores a la 1.0 fueron probadas por Julien Terrapon.
+    <value>Utiliza partes de código y elementos de UI de David Rossy.
+Las versiones anteriores a la 1.0 fueron probadas por Julien Terrapon.
 
 Este producto fue desarrollado originalmente en un contexto educativo,
 para el aprendizaje de
@@ -319,7 +319,7 @@ la programación orientada a objetos.
 Es un software libre y se proporciona tal cual.
 
 
-Versión 1.8.0.1 - abril de 2026
+Versión 1.8 - mayo de 2026
 Desarrollado por Laurent Barraud.</value>
   </data>
   <data name="taskDescriptionFontSizeText" xml:space="preserve">

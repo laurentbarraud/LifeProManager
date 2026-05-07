@@ -1,7 +1,7 @@
 ﻿/// <file>Program.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
-/// <version>1.8.0.1</version>
-/// <date>April 18th, 2026</date>
+/// <version>1.8.</version>
+/// <date>May 7th, 2026</date>
 
 using System;
 using System.Globalization;
@@ -84,10 +84,24 @@ namespace LifeProManager
         /// <summary>
         /// Helper method to switch the main form.
         /// Replaces the visible UI with a new form without closing the application.
+        /// Preserves size, position, and window state.
         /// </summary>
         public static void SwitchMainForm(Form newForm) 
         { 
             Form oldForm = appContext.MainForm; 
+            appContext.MainForm = newForm;
+
+            // Copies size and position
+            newForm.StartPosition = FormStartPosition.Manual;
+            newForm.Left = oldForm.Left;
+            newForm.Top = oldForm.Top;
+            newForm.Width = oldForm.Width;
+            newForm.Height = oldForm.Height;
+
+            // Copies window state (Normal / Maximized)
+            newForm.WindowState = oldForm.WindowState;
+
+            // Replaces the main form in the ApplicationContext
             appContext.MainForm = newForm;
 
             newForm.Show(); 
