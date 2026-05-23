@@ -1,7 +1,7 @@
-## LifeProManager
-A To-do list manager in C# with WinForms and a SQLite database for offline storage.
+## Life Pro Manager
+A to-do list manager in C# with WinForms and a SQLite database for offline storage.
 
-It includes birthday reminders and topic-based lists.
+Includes birthday reminders and topic-based lists.
 
 This fork is the actively maintained version, as the original co-author has stopped development.
 
@@ -25,10 +25,12 @@ This fork is the actively maintained version, as the original co-author has stop
 
 ### Features
 - 🚀 Fast and responsive — even with 1,000+ tasks
+- 🧩 Straightforward architecture with clear responsibilities and predictable UI logic  
+- 🔍 Task search engine with natural language date parsing, fuzzy lexical matching and semantic relevance scoring.
+Includes a mock-data script (≈40 tasks) and a built‑in test runner to validate all search cases at once with console output.  
 - 📦 Smart file-based architecture — everything fits in a single, portable DB file
-- 🔍 Task search engine with multilingual natural language date parsing, fuzzy lexical matching and semantic relevance scoring
-- 🎂 Birthday calendar listing all names and the age they’ll reach this year
 - 📤 Export tasks to a clean, date‑sorted HTML page
+- 🎂 Birthday calendar listing all names and the age they’ll reach this year
 - 🪟 Responsive main window with a sliding right panel and persistent user‑defined width
 - 🌐 Localized in English, French and Spanish.
 
@@ -43,4 +45,4 @@ This fork is the actively maintained version, as the original co-author has stop
 Go to the [Releases](https://github.com/laurentbarraud/LifeProManager/releases) section to download a ready-to-use installer,  
 designed for x64-based Windows systems (Windows 7 and above). 
 
-If this project helps you or sparks ideas, feel free to drop a star — it's always appreciated.
+If this project inspires you or helped you learn something, feel free to drop a star — it’s always appreciated.
