@@ -1,7 +1,7 @@
 ﻿/// <file>LayoutBuilder.cs</file>
 /// <author>Laurent Barraud</author>
-/// <version>1.8.</version>
-/// <date>May 7th, 2026</date>
+/// <version>1.8.1</version>
+/// <date>May 23th, 2026</date>
 
 using System;
 
@@ -11,10 +11,12 @@ namespace LifeProManager
     using System.Collections.Generic;
     using System.Drawing;
     using System.Globalization;
+    using System.Threading.Tasks;
     using System.Windows.Forms;
 
     public class LayoutBuilder
     {
+        // Private members
         private readonly frmMain _frmMain;
 
         // Layout constants
@@ -26,6 +28,16 @@ namespace LifeProManager
         private const int RIGHT_PADDING = 4;
         private const int DATE_LABEL_WIDTH = 95;
 
+        private readonly LayoutType layoutType;
+
+        /// <summary>
+        /// Returns true if the task is a dummy placeholder (no results or search error).
+        /// </summary>
+        /// <param name="task"></param>
+        /// <returns></returns>
+        private bool IsDummyTask(Tasks task) => task.Id < 0;
+
+        // Public properties and enum
         public enum LayoutType
         {
             Topics = 0,
@@ -35,8 +47,6 @@ namespace LifeProManager
             Search = 4
         }
 
-        private readonly LayoutType layoutType;
-
         public LayoutBuilder(frmMain mainForm, LayoutType layoutType)
         {
             _frmMain = mainForm;
@@ -44,59 +54,45 @@ namespace LifeProManager
         }
 
         /// <summary>
-        /// Adds approve/edit/delete/unapprove buttons to the right panel.
+        /// Adds the appropriate action button to the right panel of a task row,
+        /// depending on the layout type. 
         /// </summary>
-        private void AddButtons(Panel rightPanel, Tasks task, LayoutType targetLayout)
+        private void AddButton(Panel rightPanel, Tasks task, LayoutType targetLayout)
         {
-            FlowLayoutPanel flowLayoutPnlButtons = new FlowLayoutPanel
-            {
-                Anchor = AnchorStyles.Top | AnchorStyles.Right,
-                AutoSize = false,
-                Width = (BUTTON_SIZE * 3) + (HORIZONTAL_GAP * 2),
-                Height = ROW_HEIGHT,
-                FlowDirection = FlowDirection.LeftToRight,
-                WrapContents = false,
-                BackColor = Color.Transparent,
-                Margin = new Padding(0)
-            };
-
-            Button btnApprove = CreateTaskButton(Properties.Resources.validate_task);
-            Button btnEdit = CreateTaskButton(Properties.Resources.edit_task);
-            Button btnDelete = CreateTaskButton(Properties.Resources.delete_task);
-            Button btnUnapprove = CreateTaskButton(Properties.Resources.unapprove_task);
-
-            // Adds a hand cursor to action buttons for better feedback
-            btnApprove.Cursor = Cursors.Hand;
-            btnEdit.Cursor = Cursors.Hand;
-            btnDelete.Cursor = Cursors.Hand;
-            btnUnapprove.Cursor = Cursors.Hand;
-
-            AttachButtonEvents(btnApprove, btnEdit, btnDelete, btnUnapprove, task);
-
+            // Finished layout: shows a disabled button with "validated" icon.
             if (targetLayout == LayoutType.Finished)
             {
-                flowLayoutPnlButtons.Controls.Add(btnUnapprove);
+                Button validateFilledButton = CreateTaskButton(Properties.Resources.validate_filled);
+
+                // Disables all interactions.
+                validateFilledButton.Enabled = false;
+                validateFilledButton.Cursor = Cursors.Default;
+
+                // Adds the button to the right panel
+                rightPanel.Controls.Add(validateFilledButton);
+
+                // Positions the button 10px from the right edge
+                validateFilledButton.Dock = DockStyle.Right;
+                validateFilledButton.Margin = new Padding(0, 0, 20, 0);
+                validateFilledButton.Top = (ROW_HEIGHT - BUTTON_SIZE) / 2;
+
+                return;
             }
 
-            else
+            // All others layouts: shows the Validate button
+            Button validateButton = CreateTaskButton(Properties.Resources.validate_task);
+            validateButton.Cursor = Cursors.Hand;
+
+            // Wires the click event to the menu handler
+            validateButton.Click += (s, e) =>
             {
-                flowLayoutPnlButtons.Controls.Add(btnApprove);
-            }
+                _frmMain.ValidateTask_Click(s, e);
+            };
 
-            flowLayoutPnlButtons.Controls.Add(btnEdit);
-            flowLayoutPnlButtons.Controls.Add(btnDelete);
-
-            rightPanel.Controls.Add(flowLayoutPnlButtons);
-
-            // In Today/Week layouts, no date column is displayed.
-            // The right panel is shrinked so it only matches the width of the buttons.
-            if (targetLayout == LayoutType.Today || targetLayout == LayoutType.Week)
-            {
-                rightPanel.Width = flowLayoutPnlButtons.Width + RIGHT_PADDING;
-            }
-
-            flowLayoutPnlButtons.Left = rightPanel.Width - flowLayoutPnlButtons.Width - RIGHT_PADDING;
-            flowLayoutPnlButtons.Top = (ROW_HEIGHT - flowLayoutPnlButtons.Height) / 2;
+            // Adds the button to the right panel
+            rightPanel.Controls.Add(validateButton);
+            validateButton.Dock = DockStyle.Right;
+            validateButton.Margin = new Padding(0, 0, 20, 0);
         }
 
         /// <summary>
@@ -111,13 +107,13 @@ namespace LifeProManager
 
             Label lblDate = new Label
             {
-                Left = 0,
-                Top = 0,
-                Width = DATE_LABEL_WIDTH,
-                Height = ROW_HEIGHT,
+                Dock = DockStyle.Left,
                 TextAlign = ContentAlignment.MiddleLeft,
                 BackColor = Color.Transparent,
-                ForeColor = Color.Black
+                ForeColor = Color.Black,
+                Padding = new Padding(0, 0, 8, 0),
+                AutoSize = false,
+                Width = DATE_LABEL_WIDTH + 10
             };
 
             if (targetLayout == LayoutType.Topics)
@@ -223,58 +219,6 @@ namespace LifeProManager
         }
 
         /// <summary>
-        /// Wires all hover and click events for task buttons.
-        /// </summary>
-        private void AttachButtonEvents(Button btnApprove, Button btnEdit, Button btnDelete, Button btnUnapprove, Tasks task)
-        {
-            // Hover effects
-            btnApprove.MouseEnter += (s, e) => btnApprove.BackgroundImage = Properties.Resources.validate_task_hover;
-            btnApprove.MouseLeave += (s, e) => btnApprove.BackgroundImage = Properties.Resources.validate_task;
-
-            btnEdit.MouseEnter += (s, e) => btnEdit.BackgroundImage = Properties.Resources.edit_task_hover;
-            btnEdit.MouseLeave += (s, e) => btnEdit.BackgroundImage = Properties.Resources.edit_task;
-
-            btnDelete.MouseEnter += (s, e) => btnDelete.BackgroundImage = Properties.Resources.delete_task_hover;
-            btnDelete.MouseLeave += (s, e) => btnDelete.BackgroundImage = Properties.Resources.delete_task;
-
-            btnUnapprove.MouseEnter += (s, e) => btnUnapprove.BackgroundImage = Properties.Resources.unapprove_task_hover;
-            btnUnapprove.MouseLeave += (s, e) => btnUnapprove.BackgroundImage = Properties.Resources.unapprove_task;
-
-            // Click events
-            btnApprove.Click += (s, e) =>
-            {
-                string validationDate = DateTime.Today.ToString("yyyy-MM-dd");
-                _frmMain.dbConn.ApproveTask(task.Id, validationDate);
-                _frmMain.LoadTasks();
-                if (task.Priorities_id >= 2)
-                {
-                    _frmMain.AskForCopyingTask(task);
-                }
-            };
-
-            btnEdit.Click += (s, e) => new frmEditTask(_frmMain, task).ShowDialog();
-
-            btnDelete.Click += (s, e) =>
-            {
-                DialogResult result = MessageBox.Show(LocalizationManager.GetString("areYouSureDeleteTheTask"),
-                    LocalizationManager.GetString("confirmDeletion"), MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Question);
-
-                if (result == DialogResult.OK)
-                {
-                    _frmMain.dbConn.DeleteTask(task.Id);
-                    _frmMain.LoadTasks();
-                }
-            };
-
-            btnUnapprove.Click += (s, e) =>
-            {
-                _frmMain.dbConn.UnapproveTask(task.Id);
-                _frmMain.LoadTasks();
-            };
-        }
-
-        /// <summary>
         /// Wires click and double‑click events for task selection and editing.
         /// </summary>
         private void AttachSelectionHandlers(Panel rowPanel, Label lblTitle, int taskId)
@@ -325,7 +269,7 @@ namespace LifeProManager
         /// <summary>
         /// Creates the left panel containing the icon and title.
         /// </summary>
-        private Panel CreateLeftPanel(Panel rowPanel)
+        private Panel CreateLeftPanel()
         {
             return new Panel
             {
@@ -335,27 +279,21 @@ namespace LifeProManager
         }
 
         /// <summary>
-        /// Creates the right panel containing date and action buttons.
+        /// Creates the right panel containing the date label (when applicable)
+        /// and the action button or filled validation icon depending on the layout.
         /// </summary>
-        private Panel CreateRightPanel(Panel rowPanel, LayoutType targetLayout)
+        private Panel CreateRightPanel(LayoutType targetLayout)
         {
-            // Determines the width of the right-side panel.
-            // If the target layout is Today or Week, the date column is omitted, so only the three buttons are included,
-            // else the date column width is added before the buttons.
-            int rightPanelWidth = (targetLayout == LayoutType.Today || targetLayout == LayoutType.Week)
-                ? (BUTTON_SIZE * 3) + (HORIZONTAL_GAP * 2) + RIGHT_PADDING
-                : DATE_LABEL_WIDTH + (BUTTON_SIZE * 3) + (HORIZONTAL_GAP * 2) + RIGHT_PADDING;
-
+            // The right panel will automatically size itself based on its children
+            // (date label and button). This avoids reserving extra blank space.
             return new Panel
             {
-                // MinimumSize ensures the right panel always keeps enough space for the date (when present)
-                // and the action buttons.
-                // Unlike a fixed Width, MinimumSize prevents the left panel (set to Dock.Fill)
-                // from shrinking it below this size, while still allowing the panel to grow if needed.
-                MinimumSize = new Size(rightPanelWidth, ROW_HEIGHT),
+                AutoSize = true,
+                AutoSizeMode = AutoSizeMode.GrowAndShrink,
                 Height = ROW_HEIGHT,
                 Dock = DockStyle.Right,
-                BackColor = Color.Transparent
+                BackColor = Color.Transparent,
+                Padding = new Padding(0, 0, 5, 0)
             };
         }
 
@@ -395,6 +333,10 @@ namespace LifeProManager
             btn.FlatAppearance.BorderSize = 0;
             btn.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btn.FlatAppearance.MouseDownBackColor = Color.Transparent;
+
+            btn.MouseEnter += (s, e) => btn.BackgroundImage = Properties.Resources.validate_task_hover;
+            btn.MouseLeave += (s, e) => btn.BackgroundImage = imgButton;
+            
             return btn;
         }
 
@@ -439,20 +381,25 @@ namespace LifeProManager
                 Panel rowPanel = CreateRowPanel(targetPanel, currentPosY);
                 targetPanel.Controls.Add(rowPanel);
 
-                Panel rightPanel = CreateRightPanel(rowPanel, targetLayout);
-                Panel leftPanel = CreateLeftPanel(rowPanel);
+                Panel rightPanel = CreateRightPanel(targetLayout);
+                Panel leftPanel = CreateLeftPanel();
 
                 rowPanel.Controls.Add(leftPanel);
                 rowPanel.Controls.Add(rightPanel);
 
                 AddDateLabelIfNeeded(rightPanel, task, targetLayout, parsedDeadline);
-                AddButtons(rightPanel, task, targetLayout);
+                AddButton(rightPanel, task, targetLayout);
                 AddIcon(leftPanel, task, parsedDeadline);
 
-                Label lblTitle = CreateTitleLabel(leftPanel, targetLayout);
+                Label lblTitle = CreateTitleLabel(leftPanel);
                 ApplyTitleText(lblTitle, task);
 
                 AttachSelectionHandlers(rowPanel, lblTitle, task.Id);
+
+                // Attach the handler to the title label instead of the row panel
+                // to prevent the context menu from opening unintentionally.
+                lblTitle.MouseDown += LblTitleTask_MouseDown;
+
                 RegisterSelectableRow(targetPanel, rowPanel, lblTitle, task);
 
                 currentPosY += ROW_HEIGHT + VERTICAL_GAP;
@@ -463,8 +410,7 @@ namespace LifeProManager
         /// Creates the title label for a task.
         /// </summary>
         /// <param name="leftPanel"> Left panel to which the label will be added. </param>
-        /// <param name="targetLayout"> The layout type, used to determine padding. </param>
-        private Label CreateTitleLabel(Panel leftPanel, LayoutType targetLayout)
+        private Label CreateTitleLabel(Panel leftPanel)
         {
             Label lblTitle = new Label
             {
@@ -474,7 +420,7 @@ namespace LifeProManager
                 ForeColor = Color.Black,
                 Font = new Font("Segoe UI", 11),
                 AutoSize = false,
-                Padding = new Padding(ICON_SIZE + HORIZONTAL_GAP, 0, 0, 0)
+                Padding = new Padding(ICON_SIZE + HORIZONTAL_GAP, 0, 15, 0)
             };
 
             leftPanel.Controls.Add(lblTitle);
@@ -482,9 +428,110 @@ namespace LifeProManager
         }
 
         /// <summary>
-        /// Returns true if the task is a dummy placeholder (no results or search error).
+        /// Finds the SelectableTaskRow associated with a given title label.
+        /// This allows right‑click logic to retrieve the correct task.
         /// </summary>
-        private bool IsDummyTask(Tasks task) => task.Id < 0;
+        private SelectableTaskRow FindRowByLabel(Label lbl)
+        {
+            // The parent of the label is the left panel, and its parent is the row panel.
+            Panel rowPanel = lbl.Parent?.Parent as Panel;
+            
+            if (rowPanel == null)
+            {
+                return null;
+            }
+
+            // The parent of the row panel is the task list panel (Today, Week, etc.)
+            Panel parentPanel = rowPanel.Parent as Panel;
+            
+            if (parentPanel == null)
+            {
+                return null;
+            }
+
+            // Searches for the SelectableTaskRow in the selection structure for this panel.
+            if (_frmMain.selectionByPanel.TryGetValue(parentPanel, out var panelRows))
+            {
+                foreach (var row in panelRows)
+                {
+                    // If the title label matches, we found the corresponding row.
+                    if (row.TitleLabel == lbl)
+                    {
+                        return row;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Handles right‑clicks on a task title label.
+        /// Selects the corresponding task, configures the context menu based on the
+        /// parent panel and opens the menu at the mouse location. 
+        /// This ensures the context menu only appears when a task is explicitly 
+        /// selected by the user.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LblTitleTask_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Right)
+            {
+                return;
+            }
+
+            Label lblTask = sender as Label;
+            
+            if (lblTask == null)
+            {
+                return;
+            }
+
+            // Retrieves the SelectableTaskRow associated with this label.
+            var associatedRow = FindRowByLabel(lblTask);
+
+            if (associatedRow != null)
+            {
+                Panel associatedRowParentPanel = associatedRow.RowPanel.Parent as Panel;
+                
+                if (associatedRowParentPanel != null)
+                {
+                    _frmMain.ToggleSelection(associatedRow.TaskId, associatedRowParentPanel);
+                }
+            }
+
+            // Determines the parent panel
+            Panel parentPanel = lblTask.Parent?.Parent?.Parent as Panel;
+            
+            if (parentPanel == null)
+            {
+                return;
+            }
+
+            // Configures context menu visibility based on the panel.
+            if (parentPanel == _frmMain.pnlFinished)
+            {
+                // Finished layout: shows contextual menu options
+                // relevant to finished tasks
+                _frmMain.ValidateTask.Visible = false;
+                _frmMain.ReassignTask.Visible = true;
+                _frmMain.EditTask.Visible = true;
+                _frmMain.DeleteTask.Visible = true;
+            }
+            else
+            {
+                // Others layouts: shows contextual menu options
+                // relevant to active tasks
+                _frmMain.ValidateTask.Visible = true;
+                _frmMain.ReassignTask.Visible = false;
+                _frmMain.EditTask.Visible = true;
+                _frmMain.DeleteTask.Visible = true;
+            }
+
+            // Opens the context menu at the mouse location.
+            _frmMain.cmsTasksOptions.Show(lblTask, e.Location);
+        }
 
         /// <summary>
         /// Registers the row in the selection structure for the panel.

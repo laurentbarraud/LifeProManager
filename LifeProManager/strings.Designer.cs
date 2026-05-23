@@ -250,6 +250,15 @@ namespace LifeProManager {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Delete.
+        /// </summary>
+        internal static string DeleteTask {
+            get {
+                return ResourceManager.GetString("DeleteTask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Deleting topic will also result in the removal of related tasks..
         /// </summary>
         internal static string delTopicWillRemoveRelTasks {
@@ -268,7 +277,7 @@ namespace LifeProManager {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Edit task.
+        ///   Recherche une chaîne localisée semblable à Edit.
         /// </summary>
         internal static string EditTask {
             get {
@@ -447,7 +456,7 @@ namespace LifeProManager {
         ///It is free software and provided as is.
         ///
         ///
-        ///Version 1.8 - May 2026
+        ///Version 1.8.1 - May 2026
         ///Developed by Laurent Barraud..
         /// </summary>
         internal static string lblLicenceText {
@@ -561,6 +570,15 @@ namespace LifeProManager {
         internal static string NoResultsFound {
             get {
                 return ResourceManager.GetString("NoResultsFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Reassign.
+        /// </summary>
+        internal static string ReassignTask {
+            get {
+                return ResourceManager.GetString("ReassignTask", resourceCulture);
             }
         }
         
@@ -760,6 +778,15 @@ namespace LifeProManager {
         internal static string txtTopicText {
             get {
                 return ResourceManager.GetString("txtTopicText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Validate.
+        /// </summary>
+        internal static string ValidateTask {
+            get {
+                return ResourceManager.GetString("ValidateTask", resourceCulture);
             }
         }
         

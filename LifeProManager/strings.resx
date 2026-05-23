@@ -304,7 +304,7 @@
     <value>December</value>
   </data>
   <data name="EditTask" xml:space="preserve">
-    <value>Edit task</value>
+    <value>Edit</value>
   </data>
   <data name="langSpanish" xml:space="preserve">
     <value>Spanish</value>
@@ -318,7 +318,7 @@ as part of learning object‑oriented programming.
 It is free software and provided as is.
 
 
-Version 1.8 - May 2026
+Version 1.8.1 - May 2026
 Developed by Laurent Barraud.</value>
   </data>
   <data name="taskDescriptionFontSizeText" xml:space="preserve">
@@ -366,5 +366,14 @@ Developed by Laurent Barraud.</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
+  </data>
+  <data name="ValidateTask" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="DeleteTask" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ReassignTask" xml:space="preserve">
+    <value>Reassign</value>
   </data>
 </root>

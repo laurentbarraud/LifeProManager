@@ -201,8 +201,8 @@
     <Resource Include="Resources\delete-trash-super-hover.png" />
     <Resource Include="Resources\add-task.png" />
     <Resource Include="Resources\add-task-hover.png" />
+    <None Include="Resources\validate-task-hover.png" />
     <Content Include="scripts\insertMockData.sql" />
-    <Resource Include="Resources\validate-task-hover.png" />
     <Resource Include="Resources\validate-task.png" />
     <Resource Include="Resources\validate-filled.png" />
     <Resource Include="Resources\unapprove-task-hover.png" />

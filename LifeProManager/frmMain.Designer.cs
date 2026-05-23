@@ -72,6 +72,11 @@
             this.cmdPreviousDay = new System.Windows.Forms.Button();
             this.lblTaskDescription = new System.Windows.Forms.Label();
             this.calMonth = new System.Windows.Forms.MonthCalendar();
+            this.cmsTasksOptions = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ValidateTask = new System.Windows.Forms.ToolStripMenuItem();
+            this.EditTask = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteTask = new System.Windows.Forms.ToolStripMenuItem();
+            this.ReassignTask = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContainer.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabDates.SuspendLayout();
@@ -81,6 +86,7 @@
             this.pnlSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTaskDescriptionFontSize)).BeginInit();
             this.pnlRight.SuspendLayout();
+            this.cmsTasksOptions.SuspendLayout();
             this.SuspendLayout();
             // 
             // ilsTabs
@@ -161,24 +167,30 @@
             // 
             // cmdNextTopic
             // 
+            this.cmdNextTopic.BackColor = System.Drawing.Color.Transparent;
+            this.cmdNextTopic.BackgroundImage = global::LifeProManager.Properties.Resources.right_chevron;
             resources.ApplyResources(this.cmdNextTopic, "cmdNextTopic");
             this.cmdNextTopic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdNextTopic.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.cmdNextTopic.FlatAppearance.BorderSize = 0;
             this.cmdNextTopic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.cmdNextTopic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.cmdNextTopic.Name = "cmdNextTopic";
-            this.cmdNextTopic.UseVisualStyleBackColor = true;
+            this.cmdNextTopic.UseVisualStyleBackColor = false;
             this.cmdNextTopic.Click += new System.EventHandler(this.cmdNextTopic_Click);
             // 
             // cmdPreviousTopic
             // 
             resources.ApplyResources(this.cmdPreviousTopic, "cmdPreviousTopic");
+            this.cmdPreviousTopic.BackColor = System.Drawing.Color.Transparent;
+            this.cmdPreviousTopic.BackgroundImage = global::LifeProManager.Properties.Resources.left_chevron;
             this.cmdPreviousTopic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdPreviousTopic.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.cmdPreviousTopic.FlatAppearance.BorderSize = 0;
             this.cmdPreviousTopic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.cmdPreviousTopic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.cmdPreviousTopic.Name = "cmdPreviousTopic";
-            this.cmdPreviousTopic.UseVisualStyleBackColor = true;
+            this.cmdPreviousTopic.UseVisualStyleBackColor = false;
             this.cmdPreviousTopic.Click += new System.EventHandler(this.cmdPreviousTopic_Click);
             // 
             // pnlTopics
@@ -197,6 +209,7 @@
             // cmdDeleteTopic
             // 
             resources.ApplyResources(this.cmdDeleteTopic, "cmdDeleteTopic");
+            this.cmdDeleteTopic.BackColor = System.Drawing.Color.Transparent;
             this.cmdDeleteTopic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdDeleteTopic.FlatAppearance.BorderSize = 0;
             this.cmdDeleteTopic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -492,6 +505,43 @@
             this.calMonth.ShowToday = false;
             this.calMonth.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calMonth_DateChanged);
             // 
+            // cmsTasksOptions
+            // 
+            this.cmsTasksOptions.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsTasksOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ValidateTask,
+            this.EditTask,
+            this.DeleteTask,
+            this.ReassignTask});
+            this.cmsTasksOptions.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.cmsTasksOptions, "cmsTasksOptions");
+            // 
+            // ValidateTask
+            // 
+            this.ValidateTask.Image = global::LifeProManager.Properties.Resources.validate_task;
+            this.ValidateTask.Name = "ValidateTask";
+            resources.ApplyResources(this.ValidateTask, "ValidateTask");
+            // 
+            // EditTask
+            // 
+            this.EditTask.Image = global::LifeProManager.Properties.Resources.edit_task;
+            this.EditTask.Name = "EditTask";
+            resources.ApplyResources(this.EditTask, "EditTask");
+            // 
+            // DeleteTask
+            // 
+            this.DeleteTask.Image = global::LifeProManager.Properties.Resources.delete_task;
+            this.DeleteTask.Name = "DeleteTask";
+            resources.ApplyResources(this.DeleteTask, "DeleteTask");
+            // 
+            // ReassignTask
+            // 
+            this.ReassignTask.Image = global::LifeProManager.Properties.Resources.unapprove_task;
+            this.ReassignTask.Name = "ReassignTask";
+            resources.ApplyResources(this.ReassignTask, "ReassignTask");
+            this.ReassignTask.MouseLeave += new System.EventHandler(this.ReassignTask_MouseLeave);
+            this.ReassignTask.MouseHover += new System.EventHandler(this.ReassignTask_MouseHover);
+            // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -517,6 +567,7 @@
             this.pnlSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTaskDescriptionFontSize)).EndInit();
             this.pnlRight.ResumeLayout(false);
+            this.cmsTasksOptions.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -564,6 +615,11 @@
         private System.Windows.Forms.CheckBox chkTopics;
         private System.Windows.Forms.CheckBox chkDescriptions;
         private System.Windows.Forms.Button cmdAddTask;
+        internal System.Windows.Forms.ToolStripMenuItem ValidateTask;
+        internal System.Windows.Forms.ToolStripMenuItem EditTask;
+        internal System.Windows.Forms.ToolStripMenuItem DeleteTask;
+        internal System.Windows.Forms.ToolStripMenuItem ReassignTask;
+        internal System.Windows.Forms.ContextMenuStrip cmsTasksOptions;
     }
 }
 

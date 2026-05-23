@@ -1,7 +1,7 @@
 ﻿/// <file>frmMain.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
-/// <version>1.8.</version>
-/// <date>May 7th, 2026</date>
+/// <version>1.8.1</version>
+/// <date>May 23th, 2026</date>
 
 using Microsoft.Win32;
 using System;
@@ -19,9 +19,7 @@ namespace LifeProManager
 {
     public partial class frmMain : Form
     {
-        // ----------------
         // Private members
-        // ----------------
 
         // Layout constants for task rows
         private const int ROW_HEIGHT = 32;
@@ -65,10 +63,7 @@ namespace LifeProManager
 
         private SmartSearch smartSearch;
 
-        // -------------------
         // Public properties
-        // -------------------
-
         public bool CopyLastTaskValues
         {
             get { return copyLastTaskValues; }
@@ -85,8 +80,51 @@ namespace LifeProManager
             set { selectedDateString = value; }
         }
 
-        // Stores, for each panel, the list of selectable task rows currently displayed.
+        // Stores, for each task list panel, the list of SelectableTaskRow objects
+        // currently displayed inside it.
         // This allows each panel to manage its own independent selection state.
+        // When a task row is clicked, the application can refer to this dictionary to
+        // determine which task is selected in that specific panel.
+        //        
+        // Each panel shows its own independent list of tasks.
+        // When the user clicks on a task row, the application must know which panel
+        // the click happened in and which task inside that panel is currently selected.
+        //
+        // A simple "selectedTaskId" is not enough, because:
+        //   - The same task ID might appear in different panels at different times.
+        //   - Each panel must maintain its own selection state independently.
+        //   - The UI needs to know which row (Label + Panel) belongs to which task.
+        //
+        // How it works:
+        // ---------------------------------------------
+        // The dictionary maps:
+        //      Panel  →  List<SelectableTaskRow>
+        //
+        // Example:
+        //      pnlToday    → [ row1, row2, row3 ]
+        //      pnlWeek     → [ row4, row5 ]
+        //      pnlTopics   → [ row6, row7, row8, row9 ]
+        //      pnlFinished → [ row10, row11 ]
+        //
+        // Each SelectableTaskRow contains:
+        //      - TaskId
+        //      - TitleLabel (the clickable label)
+        //      - RowPanel   (the container panel for the row)
+        //      - Priority, Description, etc.
+        //
+        // Why this is useful:
+        // ---------------------------------------------
+        // When the user clicks a label, we can scan the list of rows for the panel
+        // that contains this label and immediately find the corresponding task.
+        // This allows:
+        //      - Correct selection highlighting
+        //      - Correct context menu behavior
+        //      - Correct task editing/deleting/validating
+        //      - Independent selection per panel
+        //
+        // Without this structure, the UI would not be able to determine which task
+        // the user clicked on, especially when multiple panels are visible or when
+        // tasks move between panels.
         public Dictionary<Panel, List<SelectableTaskRow>> selectionByPanel
             = new Dictionary<Panel, List<SelectableTaskRow>>();
 
@@ -94,6 +132,13 @@ namespace LifeProManager
         {
             InitializeComponent();
 
+            // Wires the context menu items to their respective handlers.
+            ValidateTask.Click += ValidateTask_Click;
+            EditTask.Click += EditTask_Click;
+            DeleteTask.Click += DeleteTask_Click;
+            ReassignTask.Click += ReassignTask_Click;
+
+            // Initializes the selection dictionary for each panel with an empty list of task rows.
             selectionByPanel = new Dictionary<Panel, List<SelectableTaskRow>>
             {
                 { pnlToday, new List<SelectableTaskRow>() },
@@ -102,6 +147,7 @@ namespace LifeProManager
                 { pnlFinished, new List<SelectableTaskRow>() }
             };
 
+            // Initializes the smart search component
             smartSearch = new SmartSearch();
 
             // Builds each layout with its dedicated builder
@@ -1041,6 +1087,62 @@ namespace LifeProManager
         }
 
         /// <summary>
+        /// Asks the user for confirmation before deleting the currently selected task.
+        /// If confirmed, the task is removed from the database and the UI is refreshed.
+        /// </summary>
+        public void DeleteTask_Click(object sender, EventArgs e)
+        {
+            var selectedRow = GetSelectedTaskRow();
+            
+            if (selectedRow == null)
+            {
+                return;
+            }
+
+            // Reloads the full task object
+            Tasks taskToDelete = dbConn.ReadTaskById(selectedRow.TaskId);
+            
+            if (taskToDelete == null)
+            {
+                return;
+            }
+
+            DialogResult userChoice = MessageBox.Show(LocalizationManager.GetString("areYouSureDeleteTheTask"),
+                LocalizationManager.GetString("confirmDeletion"), MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question);
+
+            if (userChoice == DialogResult.OK)
+            {
+                dbConn.DeleteTask(taskToDelete.Id);
+                LoadTasks();
+            }
+        }
+
+        /// <summary>
+        /// Opens the edit dialog for the currently selected task. 
+        /// The task is reloaded from the database to ensure the dialog
+        /// receives the latest data.
+        /// </summary>
+        public void EditTask_Click(object sender, EventArgs e)
+        {
+            var selectedRow = GetSelectedTaskRow();
+            
+            if (selectedRow == null)
+            {
+                return;
+            }
+
+            // Reloads the full task object
+            Tasks taskToEdit = dbConn.ReadTaskById(selectedRow.TaskId);
+            if (taskToEdit == null)
+            {
+                return;
+            }
+
+            new frmEditTask(this, taskToEdit).ShowDialog();
+        }
+
+        /// <summary>
         /// Calculates which export mode to store in application settings
         /// based on the state of the checkboxes.
         /// </summary>
@@ -1169,10 +1271,7 @@ namespace LifeProManager
                 return;
             }
 
-            // -------------------------------------
             // Task navigation and task-level actions
-            // -------------------------------------
-
             HandleTaskNavigationKey(e);
         }
 
@@ -1274,7 +1373,36 @@ namespace LifeProManager
                 return LocalizationManager.GetString("dayAfterTomorrow");
             }
 
-            // For dates beyond ±2 days: return null to indicate “just show the date”
+            // For dates beyond ±2 days: returns null to indicate “just show the date”
+            return null;
+        }
+
+        /// <summary>
+        /// Scans the selection structure for the row whose TaskId matches the stored selection.
+        /// </summary>
+        /// <returns> The SelectableTaskRow corresponding to the currently selected task,
+        /// or null if no task is selected. </returns>
+        public SelectableTaskRow GetSelectedTaskRow()
+        {
+            // No task is currently selected
+            if (selectedTaskId < 0)
+            {
+                return null;
+            }
+
+            // Searches through all panels and their registered rows
+            foreach (var panelEntry in selectionByPanel)
+            {
+                foreach (var taskRow in panelEntry.Value)
+                {
+                    if (taskRow.TaskId == selectedTaskId)
+                    {
+                        return taskRow;
+                    }
+                }
+            }
+
+            // No matching row found
             return null;
         }
 
@@ -1527,6 +1655,12 @@ namespace LifeProManager
 
             // --- ComboBox: language selection ---
             ApplyLanguageComboBoxItems();
+
+            // --- Context menu: tasks options ---
+            ValidateTask.Text = LocalizationManager.GetString("ValidateTask");
+            EditTask.Text = LocalizationManager.GetString("EditTask");
+            DeleteTask.Text = LocalizationManager.GetString("DeleteTask");
+            ReassignTask.Text = LocalizationManager.GetString("ReassignTask");
         }
 
         /// <summary>
@@ -1660,6 +1794,41 @@ namespace LifeProManager
         private void pnlTopics_Resize(object sender, EventArgs e)
         {
             ApplyTopicHeaderResponsive();
+        }
+
+        /// <summary>
+        /// Removes the validation date from the currently selected task, 
+        /// moving it back to the active task lists.
+        /// </summary>
+        public void ReassignTask_Click(object sender, EventArgs e)
+        {
+            var selectedRow = GetSelectedTaskRow();
+
+            if (selectedRow == null)
+            {
+                return;
+            }
+
+            // Reloads the full task object from the database.
+            Tasks taskToReassign = dbConn.ReadTaskById(selectedRow.TaskId);
+            
+            if (taskToReassign == null)
+            {
+                return;
+            }
+
+            dbConn.UnapproveTask(taskToReassign.Id);
+            LoadTasks();
+        }
+
+        private void ReassignTask_MouseHover(object sender, EventArgs e)
+        {
+            ReassignTask.Image = Properties.Resources.unapprove_task_hover;
+        }
+
+        private void ReassignTask_MouseLeave(object sender, EventArgs e)
+        {
+            ReassignTask.Image = Properties.Resources.unapprove_task;
         }
 
         /// <summary>
@@ -2071,6 +2240,41 @@ namespace LifeProManager
         public void UpdateAddTaskButtonVisibility()
         {
             cmdAddTask.Visible = cboTopics.Items.Count > 0;
+        }
+
+        /// <summary>
+        /// Validates the currently selected task by assigning today's date as the
+        /// validation date, saving the change to the database, refreshing the UI,
+        /// and triggering the copy suggestion for repeatable tasks.
+        /// </summary>
+        public void ValidateTask_Click(object sender, EventArgs e)
+        {
+            // Retrieves the UI row corresponding to the selected task.
+            var selectedRow = GetSelectedTaskRow();
+            
+            if (selectedRow == null)
+            {
+                return;
+            }
+
+            // Reloads the full task object from the database.
+            Tasks selectedTask = dbConn.ReadTaskById(selectedRow.TaskId);
+            
+            if (selectedTask == null)
+            {
+                return;
+            }
+
+            string validationDate = DateTime.Today.ToString("yyyy-MM-dd");
+
+            dbConn.ApproveTask(selectedTask.Id, validationDate);
+            LoadTasks();
+
+            // Repeatable tasks trigger the copy suggestion.
+            if (selectedTask.Priorities_id >= 2)
+            {
+                AskForCopyingTask(selectedTask);
+            }
         }
     }
 }

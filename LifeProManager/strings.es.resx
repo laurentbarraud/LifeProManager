@@ -304,7 +304,7 @@
     <value>Diciembre</value>
   </data>
   <data name="EditTask" xml:space="preserve">
-    <value>Editar tarea</value>
+    <value>Editar</value>
   </data>
   <data name="langSpanish" xml:space="preserve">
     <value>Español</value>
@@ -319,7 +319,7 @@ la programación orientada a objetos.
 Es un software libre y se proporciona tal cual.
 
 
-Versión 1.8 - mayo de 2026
+Versión 1.8.1 - mayo de 2026
 Desarrollado por Laurent Barraud.</value>
   </data>
   <data name="taskDescriptionFontSizeText" xml:space="preserve">
@@ -366,5 +366,14 @@ Desarrollado por Laurent Barraud.</value>
   </data>
   <data name="Search" xml:space="preserve">
     <value>Buscar</value>
+  </data>
+  <data name="ValidateTask" xml:space="preserve">
+    <value>Validar</value>
+  </data>
+  <data name="DeleteTask" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="ReassignTask" xml:space="preserve">
+    <value>Reasignar</value>
   </data>
 </root>
