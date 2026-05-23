@@ -202,6 +202,7 @@
     <Resource Include="Resources\add-task.png" />
     <Resource Include="Resources\add-task-hover.png" />
     <None Include="Resources\validate-task-hover.png" />
+    <None Include="Resources\delete-task-hover.png" />
     <Content Include="scripts\insertMockData.sql" />
     <Resource Include="Resources\validate-task.png" />
     <Resource Include="Resources\validate-filled.png" />
@@ -220,7 +221,6 @@
     <Resource Include="Resources\edit-task.png" />
     <Resource Include="Resources\delete-trash-hover.png" />
     <Resource Include="Resources\delete-trash.png" />
-    <Resource Include="Resources\delete-task-hover.png" />
     <Resource Include="Resources\delete-task.png" />
     <Resource Include="Resources\clock.png" />
     <Resource Include="Resources\calendar-today-hover.png" />

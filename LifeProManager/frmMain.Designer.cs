@@ -211,6 +211,7 @@
             resources.ApplyResources(this.cmdDeleteTopic, "cmdDeleteTopic");
             this.cmdDeleteTopic.BackColor = System.Drawing.Color.Transparent;
             this.cmdDeleteTopic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdDeleteTopic.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.cmdDeleteTopic.FlatAppearance.BorderSize = 0;
             this.cmdDeleteTopic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.cmdDeleteTopic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -231,7 +232,10 @@
             resources.ApplyResources(this.cmdDeleteFinishedTasks, "cmdDeleteFinishedTasks");
             this.cmdDeleteFinishedTasks.BackColor = System.Drawing.Color.Transparent;
             this.cmdDeleteFinishedTasks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdDeleteFinishedTasks.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.cmdDeleteFinishedTasks.FlatAppearance.BorderSize = 0;
+            this.cmdDeleteFinishedTasks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.cmdDeleteFinishedTasks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.cmdDeleteFinishedTasks.Name = "cmdDeleteFinishedTasks";
             this.cmdDeleteFinishedTasks.UseVisualStyleBackColor = false;
             this.cmdDeleteFinishedTasks.Click += new System.EventHandler(this.cmdDeleteFinishedTasks_Click);

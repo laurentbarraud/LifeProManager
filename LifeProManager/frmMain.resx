@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADe
-        CwAAAk1TRnQBSQFMAgEBBAEAARwBDAEcAQwBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CwAAAk1TRnQBSQFMAgEBBAEAASQBDAEkAQwBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -260,7 +260,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblWeek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 340</value>
+    <value>65, 340</value>
   </data>
   <data name="lblWeek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -296,7 +296,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblToday.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 40</value>
+    <value>64, 40</value>
   </data>
   <data name="lblToday.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -431,7 +431,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabTopics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 620</value>
+    <value>673, 620</value>
   </data>
   <data name="tabTopics.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -488,7 +488,7 @@
     <value>4, 4, 0, 4</value>
   </data>
   <data name="tabFinished.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 620</value>
+    <value>673, 620</value>
   </data>
   <data name="tabFinished.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -530,7 +530,7 @@
     <value>4, 4, 0, 4</value>
   </data>
   <data name="tabSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 620</value>
+    <value>673, 620</value>
   </data>
   <data name="tabSettings.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -579,6 +579,934 @@
   </data>
   <data name="&gt;&gt;tabMain.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTask.Name" xml:space="preserve">
+    <value>cmdAddTask</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTask.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTask.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmdSearch.Name" xml:space="preserve">
+    <value>cmdSearch</value>
+  </data>
+  <data name="&gt;&gt;cmdSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdSearch.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboTopics.Name" xml:space="preserve">
+    <value>cboTopics</value>
+  </data>
+  <data name="&gt;&gt;cboTopics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboTopics.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cboTopics.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTopic.Name" xml:space="preserve">
+    <value>cmdAddTopic</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTopic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTopic.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdAddTopic.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmdBirthdayCalendar.Name" xml:space="preserve">
+    <value>cmdBirthdayCalendar</value>
+  </data>
+  <data name="&gt;&gt;cmdBirthdayCalendar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdBirthdayCalendar.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdBirthdayCalendar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmdExportToHtml.Name" xml:space="preserve">
+    <value>cmdExportToHtml</value>
+  </data>
+  <data name="&gt;&gt;cmdExportToHtml.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdExportToHtml.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdExportToHtml.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cmdNextDay.Name" xml:space="preserve">
+    <value>cmdNextDay</value>
+  </data>
+  <data name="&gt;&gt;cmdNextDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdNextDay.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdNextDay.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cmdToday.Name" xml:space="preserve">
+    <value>cmdToday</value>
+  </data>
+  <data name="&gt;&gt;cmdToday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdToday.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdToday.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousDay.Name" xml:space="preserve">
+    <value>cmdPreviousDay</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousDay.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousDay.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescription.Name" xml:space="preserve">
+    <value>lblTaskDescription</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescription.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescription.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;calMonth.Name" xml:space="preserve">
+    <value>calMonth</value>
+  </data>
+  <data name="&gt;&gt;calMonth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calMonth.Parent" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;calMonth.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pnlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="pnlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>681, 0</value>
+  </data>
+  <data name="pnlRight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 20, 0</value>
+  </data>
+  <data name="pnlRight.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 10000</value>
+  </data>
+  <data name="pnlRight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 0</value>
+  </data>
+  <data name="pnlRight.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="pnlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 670</value>
+  </data>
+  <data name="pnlRight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnlRight.Name" xml:space="preserve">
+    <value>pnlRight</value>
+  </data>
+  <data name="&gt;&gt;pnlRight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlRight.Parent" xml:space="preserve">
+    <value>pnlContainer</value>
+  </data>
+  <data name="&gt;&gt;pnlRight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 12</value>
+  </data>
+  <data name="pnlContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>961, 670</value>
+  </data>
+  <data name="pnlContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;pnlContainer.Name" xml:space="preserve">
+    <value>pnlContainer</value>
+  </data>
+  <data name="&gt;&gt;pnlContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlContainer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmdNextTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cmdNextTopic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmdNextTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdNextTopic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 36</value>
+  </data>
+  <data name="cmdNextTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmdNextTopic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 26</value>
+  </data>
+  <data name="cmdNextTopic.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cmdNextTopic.Name" xml:space="preserve">
+    <value>cmdNextTopic</value>
+  </data>
+  <data name="&gt;&gt;cmdNextTopic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdNextTopic.Parent" xml:space="preserve">
+    <value>tabTopics</value>
+  </data>
+  <data name="&gt;&gt;cmdNextTopic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmdPreviousTopic.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="cmdPreviousTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cmdPreviousTopic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmdPreviousTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdPreviousTopic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 36</value>
+  </data>
+  <data name="cmdPreviousTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmdPreviousTopic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 26</value>
+  </data>
+  <data name="cmdPreviousTopic.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousTopic.Name" xml:space="preserve">
+    <value>cmdPreviousTopic</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousTopic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousTopic.Parent" xml:space="preserve">
+    <value>tabTopics</value>
+  </data>
+  <data name="&gt;&gt;cmdPreviousTopic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlTopics.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pnlTopics.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnlTopics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 88</value>
+  </data>
+  <data name="pnlTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pnlTopics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>614, 516</value>
+  </data>
+  <data name="pnlTopics.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;pnlTopics.Name" xml:space="preserve">
+    <value>pnlTopics</value>
+  </data>
+  <data name="&gt;&gt;pnlTopics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlTopics.Parent" xml:space="preserve">
+    <value>tabTopics</value>
+  </data>
+  <data name="&gt;&gt;pnlTopics.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTopic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTopic.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 12pt</value>
+  </data>
+  <data name="lblTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTopic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 36</value>
+  </data>
+  <data name="lblTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>67, 62, 67, 62</value>
+  </data>
+  <data name="lblTopic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 28</value>
+  </data>
+  <data name="lblTopic.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblTopic.Text" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="lblTopic.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTopic.Name" xml:space="preserve">
+    <value>lblTopic</value>
+  </data>
+  <data name="&gt;&gt;lblTopic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTopic.Parent" xml:space="preserve">
+    <value>tabTopics</value>
+  </data>
+  <data name="&gt;&gt;lblTopic.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmdDeleteTopic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cmdDeleteTopic.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAA09JREFUaEPt27+uTUEUBnAhRGiJikbjASiJRuINqDyAHqVKSykiQSIUjog/L2h9
+        N7Nlzcy3Zq05e842NznFL5Jvvr32rBOuuDjzcbfbwjnxRfxueCfYs0PRcKBX4o8BS7IcHgo2bzUaDvJD
+        sGUWrYXhpWBzV6HhIGwJzVsY2NxVaDhAefFvgvVK5YfwU7De3mg4gL40sI5lzbMuGg6w5tJrnnXRcIA1
+        l17zrIuGhXuivMQi8oXHcqhnrwm2xwkaKr8EG7qYcWH4JNg+zYXxSbFh2qwLA9upuTAbUpp5Yaj2qgLF
+        fXhC7p2rQHEfnpB75ypQ3Icn5N65ChT8OtFYZzbunatAcT+tCbl3rgKlfJjBp8jyiC2erfaqAoUNKB0X
+        7jDdwlcEG6LNvPBZUe1VBYZyGOv8L113oyHRNXRjXXejIdE1dGNdd6Mh0TV0Y113oyERHXpZLJ1HKWNw
+        vnzhYeewE8ssdr5YOpHu8IV7et7Ces6I3gkaEtGhPb1DLPw1ZSYaEnoosA709A6x8NuUmWhIfBd6MOuA
+        7ni9Qyz8PGUmGhIfBC64YB3QnWiPnYPuRHt3U2aiIfFG6E+SdUB3vB4u6HU01gHdwV/Lss4/NCTwW4we
+        zDqgO15vxMIXhNfJ0JC4LiKDdcfrjVj4kvA6GRoa9GDrp47uAOsAzkYsfFt4nQwNDXrwxZS1OsA6gLMR
+        C78QXidDQ4MejD8rex1gHcDZiIUjnQwNDXrw45S1OsA6gLNTtfD7lLU6wDqAs1O1sDU80gGcHRcu6DlW
+        L9LJ0NAQGR7pAM6OCxf0HKsX6WRoaIgMj3QAZ8eFC3qO1Yt0MjQ04ILavh3o7Vi9SCdDQ0Pk04x0AGe4
+        oNfR9u1kaGiIDI90AGfHhQt6jtWLdDI0NESGRzqAs9ELv05ZEw0Nejjs2wGcjV74ScqaaGjAP+HXL2Ad
+        fW51AGejF76TsiYaGp4J/QLWgeW89Q01nGPhzyorXRXRdwG+DcU6GRoaHgj9AtbZmr7P+ZQ10dBwS+gX
+        sM6Wboru+9DQUH5L9L5gva3gr1X0fVinQsMG/QK4IVjv0J6K8i6sV6FhQ/mS5SvtPkY+G/1PJN0Lg37R
+        LAuze1I0DLBe3GPEs/iR3c+wO/MXwUvKidYJm+8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="cmdDeleteTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cmdDeleteTopic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmdDeleteTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdDeleteTopic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 34</value>
+  </data>
+  <data name="cmdDeleteTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmdDeleteTopic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 30</value>
+  </data>
+  <data name="cmdDeleteTopic.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="cmdDeleteTopic.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteTopic.Name" xml:space="preserve">
+    <value>cmdDeleteTopic</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteTopic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteTopic.Parent" xml:space="preserve">
+    <value>tabTopics</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteTopic.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAA09JREFUaEPt27+uTUEUBnAhRGiJikbjASiJRuINqDyAHqVKSykiQSIUjog/L2h9
+        N7Nlzcy3Zq05e842NznFL5Jvvr32rBOuuDjzcbfbwjnxRfxueCfYs0PRcKBX4o8BS7IcHgo2bzUaDvJD
+        sGUWrYXhpWBzV6HhIGwJzVsY2NxVaDhAefFvgvVK5YfwU7De3mg4gL40sI5lzbMuGg6w5tJrnnXRcIA1
+        l17zrIuGhXuivMQi8oXHcqhnrwm2xwkaKr8EG7qYcWH4JNg+zYXxSbFh2qwLA9upuTAbUpp5Yaj2qgLF
+        fXhC7p2rQHEfnpB75ypQ3Icn5N65ChT8OtFYZzbunatAcT+tCbl3rgKlfJjBp8jyiC2erfaqAoUNKB0X
+        7jDdwlcEG6LNvPBZUe1VBYZyGOv8L113oyHRNXRjXXejIdE1dGNdd6Mh0TV0Y113oyERHXpZLJ1HKWNw
+        vnzhYeewE8ssdr5YOpHu8IV7et7Ces6I3gkaEtGhPb1DLPw1ZSYaEnoosA709A6x8NuUmWhIfBd6MOuA
+        7ni9Qyz8PGUmGhIfBC64YB3QnWiPnYPuRHt3U2aiIfFG6E+SdUB3vB4u6HU01gHdwV/Lss4/NCTwW4we
+        zDqgO15vxMIXhNfJ0JC4LiKDdcfrjVj4kvA6GRoa9GDrp47uAOsAzkYsfFt4nQwNDXrwxZS1OsA6gLMR
+        C78QXidDQ4MejD8rex1gHcDZiIUjnQwNDXrw45S1OsA6gLNTtfD7lLU6wDqAs1O1sDU80gGcHRcu6DlW
+        L9LJ0NAQGR7pAM6OCxf0HKsX6WRoaIgMj3QAZ8eFC3qO1Yt0MjQ04ILavh3o7Vi9SCdDQ0Pk04x0AGe4
+        oNfR9u1kaGiIDI90AGfHhQt6jtWLdDI0NESGRzqAs9ELv05ZEw0Nejjs2wGcjV74ScqaaGjAP+HXL2Ad
+        fW51AGejF76TsiYaGp4J/QLWgeW89Q01nGPhzyorXRXRdwG+DcU6GRoaHgj9AtbZmr7P+ZQ10dBwS+gX
+        sM6Wboru+9DQUH5L9L5gva3gr1X0fVinQsMG/QK4IVjv0J6K8i6sV6FhQ/mS5SvtPkY+G/1PJN0Lg37R
+        LAuze1I0DLBe3GPEs/iR3c+wO/MXwUvKidYJm+8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 34</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 30</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="cmdDeleteFinishedTasks.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteFinishedTasks.Name" xml:space="preserve">
+    <value>cmdDeleteFinishedTasks</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteFinishedTasks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteFinishedTasks.Parent" xml:space="preserve">
+    <value>tabFinished</value>
+  </data>
+  <data name="&gt;&gt;cmdDeleteFinishedTasks.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlFinished.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pnlFinished.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnlFinished.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 92</value>
+  </data>
+  <data name="pnlFinished.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 0, 4</value>
+  </data>
+  <data name="pnlFinished.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 512</value>
+  </data>
+  <data name="pnlFinished.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;pnlFinished.Name" xml:space="preserve">
+    <value>pnlFinished</value>
+  </data>
+  <data name="&gt;&gt;pnlFinished.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlFinished.Parent" xml:space="preserve">
+    <value>tabFinished</value>
+  </data>
+  <data name="&gt;&gt;pnlFinished.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
+    <value>lnkAppInLanguage</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
+    <value>lnkInsertTasksFromSql</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
+    <value>nudTaskDescriptionFontSize</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
+    <value>lblTaskDescriptionFontSize</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
+    <value>chkRunAtWindowsStartup</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
+    <value>lblExportDeadlineAndTitle</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
+    <value>cboAppLanguage</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
+    <value>chkTopics</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
+    <value>chkDescriptions</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pnlSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 17</value>
+  </data>
+  <data name="pnlSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>749, 587</value>
+  </data>
+  <data name="pnlSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;pnlSettings.Name" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;pnlSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSettings.Parent" xml:space="preserve">
+    <value>tabSettings</value>
+  </data>
+  <data name="&gt;&gt;pnlSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lnkAppInLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnkAppInLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lnkAppInLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lnkAppInLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 501</value>
+  </data>
+  <data name="lnkAppInLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 23</value>
+  </data>
+  <data name="lnkAppInLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="lnkAppInLanguage.Text" xml:space="preserve">
+    <value>Application en :</value>
+  </data>
+  <data name="lnkAppInLanguage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
+    <value>lnkAppInLanguage</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 435</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 23</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Text" xml:space="preserve">
+    <value>Insérer des tâches via script SQL</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
+    <value>lnkInsertTasksFromSql</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 257</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 26</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
+    <value>nudTaskDescriptionFontSize</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 217</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 23</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Text" xml:space="preserve">
+    <value>Taille de caractères pour la description des tâches :</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
+    <value>lblTaskDescriptionFontSize</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 341</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 27</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Text" xml:space="preserve">
+    <value>Lancer le programme au démarrage de Windows</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
+    <value>chkRunAtWindowsStartup</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 55</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 23</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Text" xml:space="preserve">
+    <value>En plus des dates d'échéance exporter :</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
+    <value>lblExportDeadlineAndTitle</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cboAppLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="cboAppLanguage.ItemHeight" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cboAppLanguage.Items" xml:space="preserve">
+    <value>anglais</value>
+  </data>
+  <data name="cboAppLanguage.Items1" xml:space="preserve">
+    <value>français</value>
+  </data>
+  <data name="cboAppLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 541</value>
+  </data>
+  <data name="cboAppLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 31</value>
+  </data>
+  <data name="cboAppLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
+    <value>cboAppLanguage</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chkTopics.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTopics.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="chkTopics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTopics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 138</value>
+  </data>
+  <data name="chkTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkTopics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 27</value>
+  </data>
+  <data name="chkTopics.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="chkTopics.Text" xml:space="preserve">
+    <value>les thèmes</value>
+  </data>
+  <data name="chkTopics.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
+    <value>chkTopics</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkDescriptions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDescriptions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="chkDescriptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkDescriptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 100</value>
+  </data>
+  <data name="chkDescriptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkDescriptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 27</value>
+  </data>
+  <data name="chkDescriptions.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="chkDescriptions.Text" xml:space="preserve">
+    <value>les descriptions</value>
+  </data>
+  <data name="chkDescriptions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
+    <value>chkDescriptions</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="cmdAddTask.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -1745,802 +2673,6 @@
   </data>
   <data name="&gt;&gt;calMonth.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="pnlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="pnlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 0</value>
-  </data>
-  <data name="pnlRight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 20, 0</value>
-  </data>
-  <data name="pnlRight.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 10000</value>
-  </data>
-  <data name="pnlRight.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>280, 0</value>
-  </data>
-  <data name="pnlRight.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
-  </data>
-  <data name="pnlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 670</value>
-  </data>
-  <data name="pnlRight.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pnlRight.Name" xml:space="preserve">
-    <value>pnlRight</value>
-  </data>
-  <data name="&gt;&gt;pnlRight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlRight.Parent" xml:space="preserve">
-    <value>pnlContainer</value>
-  </data>
-  <data name="&gt;&gt;pnlRight.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pnlContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 12</value>
-  </data>
-  <data name="pnlContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>961, 670</value>
-  </data>
-  <data name="pnlContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;pnlContainer.Name" xml:space="preserve">
-    <value>pnlContainer</value>
-  </data>
-  <data name="&gt;&gt;pnlContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlContainer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cmdNextTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="cmdNextTopic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cmdNextTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmdNextTopic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>519, 36</value>
-  </data>
-  <data name="cmdNextTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="cmdNextTopic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 26</value>
-  </data>
-  <data name="cmdNextTopic.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;cmdNextTopic.Name" xml:space="preserve">
-    <value>cmdNextTopic</value>
-  </data>
-  <data name="&gt;&gt;cmdNextTopic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdNextTopic.Parent" xml:space="preserve">
-    <value>tabTopics</value>
-  </data>
-  <data name="&gt;&gt;cmdNextTopic.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cmdPreviousTopic.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="cmdPreviousTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="cmdPreviousTopic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cmdPreviousTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmdPreviousTopic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 36</value>
-  </data>
-  <data name="cmdPreviousTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="cmdPreviousTopic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 26</value>
-  </data>
-  <data name="cmdPreviousTopic.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;cmdPreviousTopic.Name" xml:space="preserve">
-    <value>cmdPreviousTopic</value>
-  </data>
-  <data name="&gt;&gt;cmdPreviousTopic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdPreviousTopic.Parent" xml:space="preserve">
-    <value>tabTopics</value>
-  </data>
-  <data name="&gt;&gt;cmdPreviousTopic.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlTopics.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="pnlTopics.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pnlTopics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 88</value>
-  </data>
-  <data name="pnlTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="pnlTopics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>619, 516</value>
-  </data>
-  <data name="pnlTopics.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;pnlTopics.Name" xml:space="preserve">
-    <value>pnlTopics</value>
-  </data>
-  <data name="&gt;&gt;pnlTopics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlTopics.Parent" xml:space="preserve">
-    <value>tabTopics</value>
-  </data>
-  <data name="&gt;&gt;pnlTopics.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblTopic.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTopic.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 12pt</value>
-  </data>
-  <data name="lblTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTopic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 36</value>
-  </data>
-  <data name="lblTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>67, 62, 67, 62</value>
-  </data>
-  <data name="lblTopic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 28</value>
-  </data>
-  <data name="lblTopic.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="lblTopic.Text" xml:space="preserve">
-    <value>Thème</value>
-  </data>
-  <data name="lblTopic.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTopic.Name" xml:space="preserve">
-    <value>lblTopic</value>
-  </data>
-  <data name="&gt;&gt;lblTopic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTopic.Parent" xml:space="preserve">
-    <value>tabTopics</value>
-  </data>
-  <data name="&gt;&gt;lblTopic.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cmdDeleteTopic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="cmdDeleteTopic.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAA09JREFUaEPt27+uTUEUBnAhRGiJikbjASiJRuINqDyAHqVKSykiQSIUjog/L2h9
-        N7Nlzcy3Zq05e842NznFL5Jvvr32rBOuuDjzcbfbwjnxRfxueCfYs0PRcKBX4o8BS7IcHgo2bzUaDvJD
-        sGUWrYXhpWBzV6HhIGwJzVsY2NxVaDhAefFvgvVK5YfwU7De3mg4gL40sI5lzbMuGg6w5tJrnnXRcIA1
-        l17zrIuGhXuivMQi8oXHcqhnrwm2xwkaKr8EG7qYcWH4JNg+zYXxSbFh2qwLA9upuTAbUpp5Yaj2qgLF
-        fXhC7p2rQHEfnpB75ypQ3Icn5N65ChT8OtFYZzbunatAcT+tCbl3rgKlfJjBp8jyiC2erfaqAoUNKB0X
-        7jDdwlcEG6LNvPBZUe1VBYZyGOv8L113oyHRNXRjXXejIdE1dGNdd6Mh0TV0Y113oyERHXpZLJ1HKWNw
-        vnzhYeewE8ssdr5YOpHu8IV7et7Ces6I3gkaEtGhPb1DLPw1ZSYaEnoosA709A6x8NuUmWhIfBd6MOuA
-        7ni9Qyz8PGUmGhIfBC64YB3QnWiPnYPuRHt3U2aiIfFG6E+SdUB3vB4u6HU01gHdwV/Lss4/NCTwW4we
-        zDqgO15vxMIXhNfJ0JC4LiKDdcfrjVj4kvA6GRoa9GDrp47uAOsAzkYsfFt4nQwNDXrwxZS1OsA6gLMR
-        C78QXidDQ4MejD8rex1gHcDZiIUjnQwNDXrw45S1OsA6gLNTtfD7lLU6wDqAs1O1sDU80gGcHRcu6DlW
-        L9LJ0NAQGR7pAM6OCxf0HKsX6WRoaIgMj3QAZ8eFC3qO1Yt0MjQ04ILavh3o7Vi9SCdDQ0Pk04x0AGe4
-        oNfR9u1kaGiIDI90AGfHhQt6jtWLdDI0NESGRzqAs9ELv05ZEw0Nejjs2wGcjV74ScqaaGjAP+HXL2Ad
-        fW51AGejF76TsiYaGp4J/QLWgeW89Q01nGPhzyorXRXRdwG+DcU6GRoaHgj9AtbZmr7P+ZQ10dBwS+gX
-        sM6Wboru+9DQUH5L9L5gva3gr1X0fVinQsMG/QK4IVjv0J6K8i6sV6FhQ/mS5SvtPkY+G/1PJN0Lg37R
-        LAuze1I0DLBe3GPEs/iR3c+wO/MXwUvKidYJm+8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="cmdDeleteTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="cmdDeleteTopic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cmdDeleteTopic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmdDeleteTopic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 34</value>
-  </data>
-  <data name="cmdDeleteTopic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="cmdDeleteTopic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 30</value>
-  </data>
-  <data name="cmdDeleteTopic.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="cmdDeleteTopic.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteTopic.Name" xml:space="preserve">
-    <value>cmdDeleteTopic</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteTopic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteTopic.Parent" xml:space="preserve">
-    <value>tabTopics</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteTopic.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAA09JREFUaEPt27+uTUEUBnAhRGiJikbjASiJRuINqDyAHqVKSykiQSIUjog/L2h9
-        N7Nlzcy3Zq05e842NznFL5Jvvr32rBOuuDjzcbfbwjnxRfxueCfYs0PRcKBX4o8BS7IcHgo2bzUaDvJD
-        sGUWrYXhpWBzV6HhIGwJzVsY2NxVaDhAefFvgvVK5YfwU7De3mg4gL40sI5lzbMuGg6w5tJrnnXRcIA1
-        l17zrIuGhXuivMQi8oXHcqhnrwm2xwkaKr8EG7qYcWH4JNg+zYXxSbFh2qwLA9upuTAbUpp5Yaj2qgLF
-        fXhC7p2rQHEfnpB75ypQ3Icn5N65ChT8OtFYZzbunatAcT+tCbl3rgKlfJjBp8jyiC2erfaqAoUNKB0X
-        7jDdwlcEG6LNvPBZUe1VBYZyGOv8L113oyHRNXRjXXejIdE1dGNdd6Mh0TV0Y113oyERHXpZLJ1HKWNw
-        vnzhYeewE8ssdr5YOpHu8IV7et7Ces6I3gkaEtGhPb1DLPw1ZSYaEnoosA709A6x8NuUmWhIfBd6MOuA
-        7ni9Qyz8PGUmGhIfBC64YB3QnWiPnYPuRHt3U2aiIfFG6E+SdUB3vB4u6HU01gHdwV/Lss4/NCTwW4we
-        zDqgO15vxMIXhNfJ0JC4LiKDdcfrjVj4kvA6GRoa9GDrp47uAOsAzkYsfFt4nQwNDXrwxZS1OsA6gLMR
-        C78QXidDQ4MejD8rex1gHcDZiIUjnQwNDXrw45S1OsA6gLNTtfD7lLU6wDqAs1O1sDU80gGcHRcu6DlW
-        L9LJ0NAQGR7pAM6OCxf0HKsX6WRoaIgMj3QAZ8eFC3qO1Yt0MjQ04ILavh3o7Vi9SCdDQ0Pk04x0AGe4
-        oNfR9u1kaGiIDI90AGfHhQt6jtWLdDI0NESGRzqAs9ELv05ZEw0Nejjs2wGcjV74ScqaaGjAP+HXL2Ad
-        fW51AGejF76TsiYaGp4J/QLWgeW89Q01nGPhzyorXRXRdwG+DcU6GRoaHgj9AtbZmr7P+ZQ10dBwS+gX
-        sM6Wboru+9DQUH5L9L5gva3gr1X0fVinQsMG/QK4IVjv0J6K8i6sV6FhQ/mS5SvtPkY+G/1PJN0Lg37R
-        LAuze1I0DLBe3GPEs/iR3c+wO/MXwUvKidYJm+8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>600, 34</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 30</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
-  </data>
-  <data name="cmdDeleteFinishedTasks.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteFinishedTasks.Name" xml:space="preserve">
-    <value>cmdDeleteFinishedTasks</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteFinishedTasks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteFinishedTasks.Parent" xml:space="preserve">
-    <value>tabFinished</value>
-  </data>
-  <data name="&gt;&gt;cmdDeleteFinishedTasks.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlFinished.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="pnlFinished.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pnlFinished.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 92</value>
-  </data>
-  <data name="pnlFinished.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 0, 4</value>
-  </data>
-  <data name="pnlFinished.Size" type="System.Drawing.Size, System.Drawing">
-    <value>623, 512</value>
-  </data>
-  <data name="pnlFinished.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;pnlFinished.Name" xml:space="preserve">
-    <value>pnlFinished</value>
-  </data>
-  <data name="&gt;&gt;pnlFinished.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlFinished.Parent" xml:space="preserve">
-    <value>tabFinished</value>
-  </data>
-  <data name="&gt;&gt;pnlFinished.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
-    <value>lnkAppInLanguage</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
-    <value>lnkInsertTasksFromSql</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>nudTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>lblTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
-    <value>chkRunAtWindowsStartup</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
-    <value>lblExportDeadlineAndTitle</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
-    <value>cboAppLanguage</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
-    <value>chkTopics</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
-    <value>chkDescriptions</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pnlSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 17</value>
-  </data>
-  <data name="pnlSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>749, 587</value>
-  </data>
-  <data name="pnlSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.Name" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.Parent" xml:space="preserve">
-    <value>tabSettings</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lnkAppInLanguage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lnkAppInLanguage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lnkAppInLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lnkAppInLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 501</value>
-  </data>
-  <data name="lnkAppInLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 23</value>
-  </data>
-  <data name="lnkAppInLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="lnkAppInLanguage.Text" xml:space="preserve">
-    <value>Application en :</value>
-  </data>
-  <data name="lnkAppInLanguage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
-    <value>lnkAppInLanguage</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 435</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 23</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Text" xml:space="preserve">
-    <value>Insérer des tâches via script SQL</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
-    <value>lnkInsertTasksFromSql</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 257</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 26</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>nudTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 217</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>395, 23</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Text" xml:space="preserve">
-    <value>Taille de caractères pour la description des tâches :</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>lblTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 341</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 27</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Text" xml:space="preserve">
-    <value>Lancer le programme au démarrage de Windows</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
-    <value>chkRunAtWindowsStartup</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 55</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>311, 23</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Text" xml:space="preserve">
-    <value>En plus des dates d'échéance exporter :</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
-    <value>lblExportDeadlineAndTitle</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cboAppLanguage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="cboAppLanguage.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="cboAppLanguage.Items" xml:space="preserve">
-    <value>anglais</value>
-  </data>
-  <data name="cboAppLanguage.Items1" xml:space="preserve">
-    <value>français</value>
-  </data>
-  <data name="cboAppLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 541</value>
-  </data>
-  <data name="cboAppLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 31</value>
-  </data>
-  <data name="cboAppLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
-    <value>cboAppLanguage</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chkTopics.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkTopics.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="chkTopics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkTopics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 138</value>
-  </data>
-  <data name="chkTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkTopics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 27</value>
-  </data>
-  <data name="chkTopics.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="chkTopics.Text" xml:space="preserve">
-    <value>les thèmes</value>
-  </data>
-  <data name="chkTopics.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
-    <value>chkTopics</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkDescriptions.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkDescriptions.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="chkDescriptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkDescriptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 100</value>
-  </data>
-  <data name="chkDescriptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkDescriptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 27</value>
-  </data>
-  <data name="chkDescriptions.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="chkDescriptions.Text" xml:space="preserve">
-    <value>les descriptions</value>
-  </data>
-  <data name="chkDescriptions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
-    <value>chkDescriptions</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <metadata name="cmsTasksOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>507, 15</value>
