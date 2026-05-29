@@ -1,7 +1,7 @@
 ﻿/// <file>frmMain.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
-/// <version>1.8.1</version>
-/// <date>May 23th, 2026</date>
+/// <version>1.8.2</version>
+/// <date>May 29th, 2026</date>
 
 using Microsoft.Win32;
 using System;
@@ -73,6 +73,15 @@ namespace LifeProManager
         // Provides access to the global database connection created in Program.cs.
         // This ensures all forms use the same connection instance.
         public DBConnection dbConn => Program.DbConn;
+
+        /// <summary>
+        /// Returns true if the specified task is currently selected.
+        /// Used to support click‑to‑toggle selection logic.
+        /// </summary>
+        public bool IsTaskSelected(int taskId)
+        {
+            return selectedTaskId == taskId;
+        }
 
         public string SelectedDateString
         {
@@ -351,6 +360,7 @@ namespace LifeProManager
                 nudTaskDescriptionFontSize,
                 chkRunAtWindowsStartup,
                 lnkInsertTasksFromSql,
+                lnkExportTasksToSql,
                 lnkAppInLanguage,
                 cboAppLanguage
             };
@@ -945,6 +955,10 @@ namespace LifeProManager
             try
             {
                 File.WriteAllText(saveFileDialog1.FileName, stringBuilder.ToString());
+
+                MessageBox.Show(LocalizationManager.GetString("exportSqlSuccess"), 
+                LocalizationManager.GetString("success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
@@ -1548,18 +1562,87 @@ namespace LifeProManager
             fadeInTimer.Tick += FadeInTimer_Tick;
         }
 
-        /// <summary>
-        /// Returns true if the specified task is currently selected.
-        /// Used to support click‑to‑toggle selection logic.
-        /// </summary>
-        internal bool IsTaskSelected(int taskId)
-        {
-            return selectedTaskId == taskId;
-        }
-
         private void lnkAppInLanguage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             new frmAbout().ShowDialog();
+        }
+
+        /// <summary>
+        /// Exports all lists and tasks into a .sql file
+        /// </summary>
+        private void lnkExportTasksToSql_LinkClicked(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog
+            {
+                Filter = LocalizationManager.GetString("exportSqlFilter"),
+                Title = LocalizationManager.GetString("exportSqlTitle"),
+                FileName = "LPM-tasks.sql"
+            };
+
+            if (saveFileDialog1.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+
+            List<Lists> lstTopics = dbConn.ReadTopics();  
+            List<Tasks> lstTasks = dbConn.ReadTask("");              
+
+            var stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine("BEGIN TRANSACTION;");
+            stringBuilder.AppendLine();
+
+            stringBuilder.AppendLine("-- Lists");
+            foreach (var topic in lstTopics)
+            {
+                string taskTitle = (topic.Title ?? "").Replace("'", "''");
+                stringBuilder.AppendLine($"INSERT INTO Lists (id, title) VALUES ({topic.Id}, '{taskTitle}');");
+            }
+
+            stringBuilder.AppendLine();
+            stringBuilder.AppendLine("-- Tasks");
+
+            foreach (var task in lstTasks)
+            {
+                string taskTitle = (task.Title ?? "").Replace("'", "''");
+                string taskDescription = (task.Description ?? "").Replace("'", "''");
+
+                string taskDeadline = string.IsNullOrWhiteSpace(task.Deadline)
+                    ? "NULL" : $"'{task.Deadline}'";
+
+                string taskValidationDate = string.IsNullOrWhiteSpace(task.ValidationDate)
+                    ? "NULL" : $"'{task.ValidationDate}'";
+
+                stringBuilder.AppendLine(
+                    "INSERT INTO Tasks VALUES (" +
+                    $"{task.Id}, " +
+                    $"'{taskTitle}', " +
+                    $"'{taskDescription}', " +
+                    $"{taskDeadline}, " +
+                    $"{taskValidationDate}, " +
+                    $"{task.Priorities_id}, " +
+                    $"{task.Lists_id}, " +
+                    $"{task.Status_id}" +
+                    ");"
+                );
+            }
+
+            stringBuilder.AppendLine();
+            stringBuilder.AppendLine("COMMIT;");
+
+            try
+            {
+                File.WriteAllText(saveFileDialog1.FileName, stringBuilder.ToString());
+
+                MessageBox.Show(LocalizationManager.GetString("exportSqlSuccess"),
+                    LocalizationManager.GetString("success"), MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format(LocalizationManager.GetString("exportSqlError"), ex.Message),
+                    LocalizationManager.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error
+                );
+            }
         }
 
         /// <summary>
@@ -1569,8 +1652,8 @@ namespace LifeProManager
         private void lnkInsertTasksFromSql_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.Filter = LocalizationManager.GetString("sqlScriptFilter");
-            fileDialog.Title = LocalizationManager.GetString("sqlScriptTitle");
+            fileDialog.Filter = LocalizationManager.GetString("importSqlFilter");
+            fileDialog.Title = LocalizationManager.GetString("importSql");
 
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -1580,7 +1663,7 @@ namespace LifeProManager
                 {
                     dbConn.ExecuteRawSql(sqlContent);
                                    
-                    MessageBox.Show(LocalizationManager.GetString("sqlScriptSuccess"), LocalizationManager.GetString("success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(LocalizationManager.GetString("importSqlSuccess"), LocalizationManager.GetString("success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                     
                     LoadTasks();
                     LoadTopics();
@@ -1594,7 +1677,7 @@ namespace LifeProManager
                 }
                 catch
                 {
-                    MessageBox.Show(LocalizationManager.GetString("sqlScriptError"), LocalizationManager.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(LocalizationManager.GetString("importSqlError"), LocalizationManager.GetString("error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -1637,14 +1720,15 @@ namespace LifeProManager
             }
 
             lblWeek.Text = LocalizationManager.GetString("nextDays");
-            lnkAppInLanguage.Text = LocalizationManager.GetString("appInLanguage");
             lblTopic.Text = LocalizationManager.GetString("topic");
             lblExportDeadlineAndTitle.Text = LocalizationManager.GetString("exportDeadlineAndTitle");
             lblTaskDescriptionFontSize.Text = LocalizationManager.GetString("taskDescriptionFontSizeText");
 
             // -- Links ---
+            lnkAppInLanguage.Text = LocalizationManager.GetString("appInLanguage");
             lnkInsertTasksFromSql.Text = LocalizationManager.GetString("lnkInsertTasksFromSqlText");
-           
+            lnkExportTasksToSql.Text = LocalizationManager.GetString("lnkExportTasksToSqlText");
+
             // --- Checkboxes ---
             chkTopics.Text = LocalizationManager.GetString("chkTopicsText");
             chkDescriptions.Text = LocalizationManager.GetString("chkDescriptionsText");
@@ -1819,16 +1903,6 @@ namespace LifeProManager
 
             dbConn.UnapproveTask(taskToReassign.Id);
             LoadTasks();
-        }
-
-        private void ReassignTask_MouseHover(object sender, EventArgs e)
-        {
-            ReassignTask.Image = Properties.Resources.unapprove_task_hover;
-        }
-
-        private void ReassignTask_MouseLeave(object sender, EventArgs e)
-        {
-            ReassignTask.Image = Properties.Resources.unapprove_task;
         }
 
         /// <summary>

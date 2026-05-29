@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADe
-        CwAAAk1TRnQBSQFMAgEBBAEAASQBDAEkAQwBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CwAAAk1TRnQBSQFMAgEBBAEAASwBDAEsAQwBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -188,26 +188,6 @@
   <data name="tabMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="pnlWeek.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnlWeek.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnlWeek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 383</value>
-  </data>
-  <data name="pnlWeek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 0, 4</value>
-  </data>
-  <data name="pnlWeek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>631, 225</value>
-  </data>
-  <data name="pnlWeek.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;pnlWeek.Name" xml:space="preserve">
     <value>pnlWeek</value>
   </data>
@@ -219,24 +199,6 @@
   </data>
   <data name="&gt;&gt;pnlWeek.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="pnlToday.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="pnlToday.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pnlToday.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 80</value>
-  </data>
-  <data name="pnlToday.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 0, 4</value>
-  </data>
-  <data name="pnlToday.Size" type="System.Drawing.Size, System.Drawing">
-    <value>631, 234</value>
-  </data>
-  <data name="pnlToday.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;pnlToday.Name" xml:space="preserve">
     <value>pnlToday</value>
@@ -250,30 +212,6 @@
   <data name="&gt;&gt;pnlToday.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblWeek.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblWeek.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 10.8pt</value>
-  </data>
-  <data name="lblWeek.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblWeek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 340</value>
-  </data>
-  <data name="lblWeek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblWeek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 25</value>
-  </data>
-  <data name="lblWeek.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lblWeek.Text" xml:space="preserve">
-    <value>Prochains jours</value>
-  </data>
   <data name="&gt;&gt;lblWeek.Name" xml:space="preserve">
     <value>lblWeek</value>
   </data>
@@ -285,30 +223,6 @@
   </data>
   <data name="&gt;&gt;lblWeek.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="lblToday.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblToday.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 10.8pt</value>
-  </data>
-  <data name="lblToday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblToday.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 40</value>
-  </data>
-  <data name="lblToday.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblToday.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 25</value>
-  </data>
-  <data name="lblToday.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="lblToday.Text" xml:space="preserve">
-    <value>Aujourd'hui</value>
   </data>
   <data name="&gt;&gt;lblToday.Name" xml:space="preserve">
     <value>lblToday</value>
@@ -325,6 +239,7 @@
   <data name="tabDates.ImageKey" xml:space="preserve">
     <value>calendar.png</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tabDates.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 34</value>
   </data>
@@ -340,6 +255,7 @@
   <data name="tabDates.Size" type="System.Drawing.Size, System.Drawing">
     <value>673, 620</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabDates.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -507,6 +423,369 @@
   </data>
   <data name="&gt;&gt;tabFinished.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lnkExportTasksToSql.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnkExportTasksToSql.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lnkExportTasksToSql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lnkExportTasksToSql.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 451</value>
+  </data>
+  <data name="lnkExportTasksToSql.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 23</value>
+  </data>
+  <data name="lnkExportTasksToSql.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lnkExportTasksToSql.Text" xml:space="preserve">
+    <value>Exporter toutes les tâches dans un fichier script SQL</value>
+  </data>
+  <data name="lnkExportTasksToSql.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lnkExportTasksToSql.Name" xml:space="preserve">
+    <value>lnkExportTasksToSql</value>
+  </data>
+  <data name="&gt;&gt;lnkExportTasksToSql.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkExportTasksToSql.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkExportTasksToSql.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lnkAppInLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnkAppInLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lnkAppInLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lnkAppInLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 501</value>
+  </data>
+  <data name="lnkAppInLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 23</value>
+  </data>
+  <data name="lnkAppInLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="lnkAppInLanguage.Text" xml:space="preserve">
+    <value>Application en :</value>
+  </data>
+  <data name="lnkAppInLanguage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
+    <value>lnkAppInLanguage</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 417</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 23</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.Text" xml:space="preserve">
+    <value>Insérer des tâches via script SQL</value>
+  </data>
+  <data name="lnkInsertTasksFromSql.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
+    <value>lnkInsertTasksFromSql</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 257</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 26</value>
+  </data>
+  <data name="nudTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
+    <value>nudTaskDescriptionFontSize</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 217</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 23</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.Text" xml:space="preserve">
+    <value>Taille de caractères pour la description des tâches :</value>
+  </data>
+  <data name="lblTaskDescriptionFontSize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
+    <value>lblTaskDescriptionFontSize</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 341</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 27</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.Text" xml:space="preserve">
+    <value>Lancer le programme au démarrage de Windows</value>
+  </data>
+  <data name="chkRunAtWindowsStartup.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
+    <value>chkRunAtWindowsStartup</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 55</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 23</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.Text" xml:space="preserve">
+    <value>En plus des dates d'échéance exporter :</value>
+  </data>
+  <data name="lblExportDeadlineAndTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
+    <value>lblExportDeadlineAndTitle</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cboAppLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="cboAppLanguage.ItemHeight" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="cboAppLanguage.Items" xml:space="preserve">
+    <value>anglais</value>
+  </data>
+  <data name="cboAppLanguage.Items1" xml:space="preserve">
+    <value>français</value>
+  </data>
+  <data name="cboAppLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 541</value>
+  </data>
+  <data name="cboAppLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 31</value>
+  </data>
+  <data name="cboAppLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
+    <value>cboAppLanguage</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkTopics.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTopics.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="chkTopics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkTopics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 138</value>
+  </data>
+  <data name="chkTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkTopics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 27</value>
+  </data>
+  <data name="chkTopics.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="chkTopics.Text" xml:space="preserve">
+    <value>les thèmes</value>
+  </data>
+  <data name="chkTopics.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
+    <value>chkTopics</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkDescriptions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDescriptions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="chkDescriptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkDescriptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 100</value>
+  </data>
+  <data name="chkDescriptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkDescriptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 27</value>
+  </data>
+  <data name="chkDescriptions.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="chkDescriptions.Text" xml:space="preserve">
+    <value>les descriptions</value>
+  </data>
+  <data name="chkDescriptions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
+    <value>chkDescriptions</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
+    <value>pnlSettings</value>
+  </data>
+  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pnlSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 17</value>
+  </data>
+  <data name="pnlSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>749, 587</value>
+  </data>
+  <data name="pnlSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="&gt;&gt;pnlSettings.Name" xml:space="preserve">
     <value>pnlSettings</value>
@@ -771,6 +1050,138 @@
   </data>
   <data name="&gt;&gt;pnlContainer.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="pnlWeek.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pnlWeek.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnlWeek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 383</value>
+  </data>
+  <data name="pnlWeek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 0, 4</value>
+  </data>
+  <data name="pnlWeek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>631, 225</value>
+  </data>
+  <data name="pnlWeek.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlWeek.Name" xml:space="preserve">
+    <value>pnlWeek</value>
+  </data>
+  <data name="&gt;&gt;pnlWeek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlWeek.Parent" xml:space="preserve">
+    <value>tabDates</value>
+  </data>
+  <data name="&gt;&gt;pnlWeek.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlToday.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pnlToday.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnlToday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 80</value>
+  </data>
+  <data name="pnlToday.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 0, 4</value>
+  </data>
+  <data name="pnlToday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>631, 234</value>
+  </data>
+  <data name="pnlToday.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlToday.Name" xml:space="preserve">
+    <value>pnlToday</value>
+  </data>
+  <data name="&gt;&gt;pnlToday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlToday.Parent" xml:space="preserve">
+    <value>tabDates</value>
+  </data>
+  <data name="&gt;&gt;pnlToday.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblWeek.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblWeek.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 10.8pt</value>
+  </data>
+  <data name="lblWeek.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWeek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 340</value>
+  </data>
+  <data name="lblWeek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblWeek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 25</value>
+  </data>
+  <data name="lblWeek.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblWeek.Text" xml:space="preserve">
+    <value>Prochains jours</value>
+  </data>
+  <data name="&gt;&gt;lblWeek.Name" xml:space="preserve">
+    <value>lblWeek</value>
+  </data>
+  <data name="&gt;&gt;lblWeek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWeek.Parent" xml:space="preserve">
+    <value>tabDates</value>
+  </data>
+  <data name="&gt;&gt;lblWeek.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblToday.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblToday.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 10.8pt</value>
+  </data>
+  <data name="lblToday.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblToday.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 40</value>
+  </data>
+  <data name="lblToday.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblToday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 25</value>
+  </data>
+  <data name="lblToday.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblToday.Text" xml:space="preserve">
+    <value>Aujourd'hui</value>
+  </data>
+  <data name="&gt;&gt;lblToday.Name" xml:space="preserve">
+    <value>lblToday</value>
+  </data>
+  <data name="&gt;&gt;lblToday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblToday.Parent" xml:space="preserve">
+    <value>tabDates</value>
+  </data>
+  <data name="&gt;&gt;lblToday.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="cmdNextTopic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -1060,453 +1471,6 @@
   </data>
   <data name="&gt;&gt;pnlFinished.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
-    <value>lnkAppInLanguage</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
-    <value>lnkInsertTasksFromSql</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>nudTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>lblTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
-    <value>chkRunAtWindowsStartup</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
-    <value>lblExportDeadlineAndTitle</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
-    <value>cboAppLanguage</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
-    <value>chkTopics</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
-    <value>chkDescriptions</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pnlSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 17</value>
-  </data>
-  <data name="pnlSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>749, 587</value>
-  </data>
-  <data name="pnlSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.Name" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.Parent" xml:space="preserve">
-    <value>tabSettings</value>
-  </data>
-  <data name="&gt;&gt;pnlSettings.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lnkAppInLanguage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lnkAppInLanguage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lnkAppInLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lnkAppInLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 501</value>
-  </data>
-  <data name="lnkAppInLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 23</value>
-  </data>
-  <data name="lnkAppInLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="lnkAppInLanguage.Text" xml:space="preserve">
-    <value>Application en :</value>
-  </data>
-  <data name="lnkAppInLanguage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Name" xml:space="preserve">
-    <value>lnkAppInLanguage</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkAppInLanguage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 435</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 23</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.Text" xml:space="preserve">
-    <value>Insérer des tâches via script SQL</value>
-  </data>
-  <data name="lnkInsertTasksFromSql.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Name" xml:space="preserve">
-    <value>lnkInsertTasksFromSql</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lnkInsertTasksFromSql.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 257</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 26</value>
-  </data>
-  <data name="nudTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>nudTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;nudTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 217</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>395, 23</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.Text" xml:space="preserve">
-    <value>Taille de caractères pour la description des tâches :</value>
-  </data>
-  <data name="lblTaskDescriptionFontSize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Name" xml:space="preserve">
-    <value>lblTaskDescriptionFontSize</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblTaskDescriptionFontSize.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 341</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 27</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.Text" xml:space="preserve">
-    <value>Lancer le programme au démarrage de Windows</value>
-  </data>
-  <data name="chkRunAtWindowsStartup.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Name" xml:space="preserve">
-    <value>chkRunAtWindowsStartup</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkRunAtWindowsStartup.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 55</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>311, 23</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.Text" xml:space="preserve">
-    <value>En plus des dates d'échéance exporter :</value>
-  </data>
-  <data name="lblExportDeadlineAndTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Name" xml:space="preserve">
-    <value>lblExportDeadlineAndTitle</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;lblExportDeadlineAndTitle.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cboAppLanguage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="cboAppLanguage.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="cboAppLanguage.Items" xml:space="preserve">
-    <value>anglais</value>
-  </data>
-  <data name="cboAppLanguage.Items1" xml:space="preserve">
-    <value>français</value>
-  </data>
-  <data name="cboAppLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 541</value>
-  </data>
-  <data name="cboAppLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 31</value>
-  </data>
-  <data name="cboAppLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Name" xml:space="preserve">
-    <value>cboAppLanguage</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;cboAppLanguage.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chkTopics.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkTopics.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="chkTopics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkTopics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 138</value>
-  </data>
-  <data name="chkTopics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkTopics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 27</value>
-  </data>
-  <data name="chkTopics.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="chkTopics.Text" xml:space="preserve">
-    <value>les thèmes</value>
-  </data>
-  <data name="chkTopics.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Name" xml:space="preserve">
-    <value>chkTopics</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkTopics.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkDescriptions.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkDescriptions.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.2pt</value>
-  </data>
-  <data name="chkDescriptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkDescriptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 100</value>
-  </data>
-  <data name="chkDescriptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkDescriptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 27</value>
-  </data>
-  <data name="chkDescriptions.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="chkDescriptions.Text" xml:space="preserve">
-    <value>les descriptions</value>
-  </data>
-  <data name="chkDescriptions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Name" xml:space="preserve">
-    <value>chkDescriptions</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.Parent" xml:space="preserve">
-    <value>pnlSettings</value>
-  </data>
-  <data name="&gt;&gt;chkDescriptions.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="cmdAddTask.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>

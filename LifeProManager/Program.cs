@@ -1,7 +1,7 @@
 ﻿/// <file>Program.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
-/// <version>1.8.1</version>
-/// <date>May 23th, 2026</date>
+/// <version>1.8.2</version>
+/// <date>May 29th, 2026</date>
 
 using System;
 using System.Globalization;

@@ -330,16 +330,16 @@ Développé par Laurent Barraud.</value>
   <data name="NoResultsFound" xml:space="preserve">
     <value>Aucun résultat trouvé.</value>
   </data>
-  <data name="sqlScriptFilter" xml:space="preserve">
+  <data name="importSqlFilter" xml:space="preserve">
     <value>Script SQL (*.sql)|*.sql</value>
   </data>
-  <data name="sqlScriptTitle" xml:space="preserve">
+  <data name="importSqlTitle" xml:space="preserve">
     <value>Insérer des données depuis un script SQL</value>
   </data>
-  <data name="sqlScriptSuccess" xml:space="preserve">
+  <data name="importSqlSuccess" xml:space="preserve">
     <value>Données insérées avec succès dans la base.</value>
   </data>
-  <data name="sqlScriptError" xml:space="preserve">
+  <data name="importSqlError" xml:space="preserve">
     <value>Erreur lors de l'exécution du script SQL.</value>
   </data>
   <data name="lnkInsertTasksFromSqlText" xml:space="preserve">
@@ -374,5 +374,21 @@ Développé par Laurent Barraud.</value>
   </data>
   <data name="ReassignTask" xml:space="preserve">
     <value>Réassigner</value>
+  </data>
+  <data name="exportSqlFilter" xml:space="preserve">
+    <value>Fichier SQL (*.sql)|*.sql</value>
+  </data>
+  <data name="exportSqlError" xml:space="preserve">
+    <value>Erreur lors de l’export SQL : {0}</value>
+  </data>
+  <data name="exportSqlTitle" xml:space="preserve">
+    <value>Exporter toutes les données</value>
+  </data>
+  <data name="lnkExportTasksToSqlText" xml:space="preserve">
+    <value>Exporter toutes les tâches dans un script SQL</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="exportSqlSuccess" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>

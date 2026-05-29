@@ -322,11 +322,83 @@ namespace LifeProManager {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Error while exporting SQL: {0}.
+        /// </summary>
+        internal static string exportSqlError {
+            get {
+                return ResourceManager.GetString("exportSqlError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à SQL file (*.sql)|*.sql.
+        /// </summary>
+        internal static string exportSqlFilter {
+            get {
+                return ResourceManager.GetString("exportSqlFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Export completed successfully..
+        /// </summary>
+        internal static string exportSqlSuccess {
+            get {
+                return ResourceManager.GetString("exportSqlSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Export all data.
+        /// </summary>
+        internal static string exportSqlTitle {
+            get {
+                return ResourceManager.GetString("exportSqlTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à First name.
         /// </summary>
         internal static string firstName {
             get {
                 return ResourceManager.GetString("firstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Error while executing the SQL script..
+        /// </summary>
+        internal static string importSqlError {
+            get {
+                return ResourceManager.GetString("importSqlError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à SQL script (*.sql)|*.sql.
+        /// </summary>
+        internal static string importSqlFilter {
+            get {
+                return ResourceManager.GetString("importSqlFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Data successfully inserted into the database..
+        /// </summary>
+        internal static string importSqlSuccess {
+            get {
+                return ResourceManager.GetString("importSqlSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Insert data from SQL script.
+        /// </summary>
+        internal static string importSqlTitle {
+            get {
+                return ResourceManager.GetString("importSqlTitle", resourceCulture);
             }
         }
         
@@ -547,6 +619,15 @@ namespace LifeProManager {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Export all tasks to a SQL script.
+        /// </summary>
+        internal static string lnkExportTasksToSqlText {
+            get {
+                return ResourceManager.GetString("lnkExportTasksToSqlText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Insert tasks from SQL script.
         /// </summary>
         internal static string lnkInsertTasksFromSqlText {
@@ -615,42 +696,6 @@ namespace LifeProManager {
         internal static string SearchResults {
             get {
                 return ResourceManager.GetString("SearchResults", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Error while executing the SQL script..
-        /// </summary>
-        internal static string sqlScriptError {
-            get {
-                return ResourceManager.GetString("sqlScriptError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à SQL script (*.sql)|*.sql.
-        /// </summary>
-        internal static string sqlScriptFilter {
-            get {
-                return ResourceManager.GetString("sqlScriptFilter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Data successfully inserted into the database..
-        /// </summary>
-        internal static string sqlScriptSuccess {
-            get {
-                return ResourceManager.GetString("sqlScriptSuccess", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Insert data from SQL script.
-        /// </summary>
-        internal static string sqlScriptTitle {
-            get {
-                return ResourceManager.GetString("sqlScriptTitle", resourceCulture);
             }
         }
         

@@ -27,7 +27,7 @@ This fork is the actively maintained version, as the original co-author has stop
 - 🚀 Fast and responsive — even with 1,000+ tasks
 - 🧩 Straightforward architecture with clear responsibilities and predictable UI logic  
 - 🔍 Task search engine with natural language date parsing, fuzzy lexical matching and semantic relevance scoring.
-Includes a mock-data script (≈40 tasks) and a built‑in test runner to validate all search cases at once with console output.  
+🧪 Built‑in test runner validating all search cases at once using 40 mock‑tasks, which can all be inserted via the provided script in the /scripts folder. 
 - 📦 Smart file-based architecture — everything fits in a single, portable DB file
 - 📤 Export tasks to a clean, date‑sorted HTML page
 - 🎂 Birthday calendar listing all names and the age they’ll reach this year
@@ -44,5 +44,12 @@ Includes a mock-data script (≈40 tasks) and a built‑in test runner to valida
 ### Download
 Go to the [Releases](https://github.com/laurentbarraud/LifeProManager/releases) section to download a ready-to-use installer,  
 designed for x64-based Windows systems (Windows 7 and above). 
+
+### Contributing
+For any suggestion of improvement or bug report, feel free to:
+
+- Open an issue
+- Submit a PR if you can code it yourself
+- Or simply contact me by mail to talk about it. 
 
 If this project inspires you or helped you learn something, feel free to drop a star — it’s always appreciated.

@@ -353,16 +353,6 @@ namespace LifeProManager.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap unapprove_task_hover {
-            get {
-                object obj = ResourceManager.GetObject("unapprove_task_hover", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap validate_filled {
             get {
                 object obj = ResourceManager.GetObject("validate_filled", resourceCulture);

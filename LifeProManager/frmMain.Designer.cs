@@ -77,6 +77,7 @@
             this.EditTask = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteTask = new System.Windows.Forms.ToolStripMenuItem();
             this.ReassignTask = new System.Windows.Forms.ToolStripMenuItem();
+            this.lnkExportTasksToSql = new System.Windows.Forms.LinkLabel();
             this.pnlContainer.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabDates.SuspendLayout();
@@ -256,6 +257,7 @@
             // 
             // pnlSettings
             // 
+            this.pnlSettings.Controls.Add(this.lnkExportTasksToSql);
             this.pnlSettings.Controls.Add(this.lnkAppInLanguage);
             this.pnlSettings.Controls.Add(this.lnkInsertTasksFromSql);
             this.pnlSettings.Controls.Add(this.nudTaskDescriptionFontSize);
@@ -543,8 +545,18 @@
             this.ReassignTask.Image = global::LifeProManager.Properties.Resources.unapprove_task;
             this.ReassignTask.Name = "ReassignTask";
             resources.ApplyResources(this.ReassignTask, "ReassignTask");
-            this.ReassignTask.MouseLeave += new System.EventHandler(this.ReassignTask_MouseLeave);
-            this.ReassignTask.MouseHover += new System.EventHandler(this.ReassignTask_MouseHover);
+            // 
+            // lnkExportTasksToSql
+            // 
+            this.lnkExportTasksToSql.ActiveLinkColor = System.Drawing.Color.Purple;
+            resources.ApplyResources(this.lnkExportTasksToSql, "lnkExportTasksToSql");
+            this.lnkExportTasksToSql.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lnkExportTasksToSql.DisabledLinkColor = System.Drawing.Color.Black;
+            this.lnkExportTasksToSql.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkExportTasksToSql.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(37)))), ((int)(((byte)(52)))));
+            this.lnkExportTasksToSql.Name = "lnkExportTasksToSql";
+            this.lnkExportTasksToSql.TabStop = true;
+            this.lnkExportTasksToSql.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkExportTasksToSql_LinkClicked);
             // 
             // frmMain
             // 
@@ -624,6 +636,7 @@
         internal System.Windows.Forms.ToolStripMenuItem DeleteTask;
         internal System.Windows.Forms.ToolStripMenuItem ReassignTask;
         internal System.Windows.Forms.ContextMenuStrip cmsTasksOptions;
+        private System.Windows.Forms.LinkLabel lnkExportTasksToSql;
     }
 }
 

@@ -331,16 +331,16 @@ Desarrollado por Laurent Barraud.</value>
   <data name="NoResultsFound" xml:space="preserve">
     <value>Ningún resultado encontrado.</value>
   </data>
-  <data name="sqlScriptFilter" xml:space="preserve">
+  <data name="importSqlFilter" xml:space="preserve">
     <value>Script SQL (*.sql)|*.sql</value>
   </data>
-  <data name="sqlScriptTitle" xml:space="preserve">
+  <data name="importSqlTitle" xml:space="preserve">
     <value>Insertar datos desde un script SQL</value>
   </data>
-  <data name="sqlScriptSuccess" xml:space="preserve">
+  <data name="importSqlSuccess" xml:space="preserve">
     <value>Datos insertados correctamente en la base de datos.</value>
   </data>
-  <data name="sqlScriptError" xml:space="preserve">
+  <data name="importSqlError" xml:space="preserve">
     <value>Error al ejecutar el script SQL.</value>
   </data>
   <data name="lnkInsertTasksFromSqlText" xml:space="preserve">
@@ -375,5 +375,20 @@ Desarrollado por Laurent Barraud.</value>
   </data>
   <data name="ReassignTask" xml:space="preserve">
     <value>Reasignar</value>
+  </data>
+  <data name="exportSqlFilter" xml:space="preserve">
+    <value>Archivo SQL (*.sql)|*.sql</value>
+  </data>
+  <data name="exportSqlError" xml:space="preserve">
+    <value>Error al exportar SQL: {0}</value>
+  </data>
+  <data name="exportSqlTitle" xml:space="preserve">
+    <value>Exportar todos los datos</value>
+  </data>
+  <data name="lnkExportTasksToSqlText" xml:space="preserve">
+    <value>Exportar todas las tareas en un script SQL</value>
+  </data>
+  <data name="exportSqlSuccess" xml:space="preserve">
+    <value>Exportación completada con éxito.</value>
   </data>
 </root>
