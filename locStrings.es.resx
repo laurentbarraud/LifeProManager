@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aboutThisApp" xml:space="preserve">
+    <value>Acerca de esta aplicación</value>
+  </data>
+  <data name="areYouSureDeleteTheTask" xml:space="preserve">
+    <value>¿Seguro que deseas eliminar esta tarea?</value>
+  </data>
+  <data name="firstName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="confirmDeletion" xml:space="preserve">
+    <value>Confirmar eliminación</value>
+  </data>
+  <data name="databaseCorrupted" xml:space="preserve">
+    <value>La base de datos está dañada y será reconstruida.</value>
+  </data>
+  <data name="databaseNotFound" xml:space="preserve">
+    <value>No se encontró el archivo de base de datos en el directorio de la aplicación. Se creará un archivo vacío.</value>
+  </data>
+  <data name="dayAfterTomorrow" xml:space="preserve">
+    <value>Pasado mañana</value>
+  </data>
+  <data name="delTopicWillRemoveRelTasks" xml:space="preserve">
+    <value>Eliminar este tema también borrará las tareas relacionadas.</value>
+  </data>
+  <data name="displayByTopic" xml:space="preserve">
+    <value>Mostrar por tema</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="today" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+  <data name="tomorrow" xml:space="preserve">
+    <value>Mañana</value>
+  </data>
+  <data name="twoDaysAgo" xml:space="preserve">
+    <value>Hace dos días</value>
+  </data>
+  <data name="yesterday" xml:space="preserve">
+    <value>Ayer</value>
+  </data>
+  <data name="youMustFillInANameForYourNewTopic" xml:space="preserve">
+    <value>Por favor, introduce un nombre para el nuevo tema.</value>
+  </data>
+  <data name="youMustGiveATitleToYourTask" xml:space="preserve">
+    <value>Debes asignar un título a la tarea.</value>
+  </data>
+  <data name="repeatTaskAnotherDay" xml:space="preserve">
+    <value>¿Repetir esta tarea otro día?</value>
+  </data>
+  <data name="confirmCopy" xml:space="preserve">
+    <value>Confirmar copia</value>
+  </data>
+  <data name="totalTasksToComplete" xml:space="preserve">
+    <value>Total de tareas por completar:</value>
+  </data>
+  <data name="exportHtmlFilter" xml:space="preserve">
+    <value>Páginas web|*.html; *.htm</value>
+  </data>
+  <data name="exportHtmlTitle" xml:space="preserve">
+    <value>Exportar todos los datos a una página web</value>
+  </data>
+  <data name="nextDays" xml:space="preserve">
+    <value>Próximos días</value>
+  </data>
+  <data name="tabDatesText" xml:space="preserve">
+    <value>Fechas</value>
+  </data>
+  <data name="tabTopicsText" xml:space="preserve">
+    <value>Temas</value>
+  </data>
+  <data name="tabFinishedText" xml:space="preserve">
+    <value>Completadas</value>
+  </data>
+  <data name="tabSettingsText" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="appInLanguage" xml:space="preserve">
+    <value>Aplicación en :</value>
+  </data>
+  <data name="topic" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="exportDeadlineAndTitle" xml:space="preserve">
+    <value>Además de fechas límite exportar:</value>
+  </data>
+  <data name="taskDescription" xml:space="preserve">
+    <value>Descripción de la tarea</value>
+  </data>
+  <data name="chkTopicsText" xml:space="preserve">
+    <value>temas</value>
+  </data>
+  <data name="chkDescriptionsText" xml:space="preserve">
+    <value>descripciones</value>
+  </data>
+  <data name="chkRunAtWindowsStartupText" xml:space="preserve">
+    <value>Ejecutar la aplicación al iniciar Windows</value>
+  </data>
+  <data name="langEnglish" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="langFrench" xml:space="preserve">
+    <value>Francés</value>
+  </data>
+  <data name="lblDescriptionText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="lblPriorityText" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="lblDeadlineText" xml:space="preserve">
+    <value>Fecha límite</value>
+  </data>
+  <data name="lblTitleText" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="lblTopicText" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="chkImportantText" xml:space="preserve">
+    <value>Importante</value>
+  </data>
+  <data name="chkRepeatableText" xml:space="preserve">
+    <value>Repetible</value>
+  </data>
+  <data name="chkBirthdayText" xml:space="preserve">
+    <value>Cumpleaños</value>
+  </data>
+  <data name="lblYearText" xml:space="preserve">
+    <value>Año</value>
+  </data>
+  <data name="AddTask" xml:space="preserve">
+    <value>Añadir tarea</value>
+  </data>
+  <data name="AddTopic" xml:space="preserve">
+    <value>Añadir tema</value>
+  </data>
+  <data name="txtTopicText" xml:space="preserve">
+    <value>Nuevo tema</value>
+  </data>
+  <data name="BirthdayCalendar" xml:space="preserve">
+    <value>Calendario de cumpleaños</value>
+  </data>
+  <data name="lblJanuaryText" xml:space="preserve">
+    <value>Enero</value>
+  </data>
+  <data name="lblFebruaryText" xml:space="preserve">
+    <value>Febrero</value>
+  </data>
+  <data name="lblMarchText" xml:space="preserve">
+    <value>Marzo</value>
+  </data>
+  <data name="lblAprilText" xml:space="preserve">
+    <value>Abril</value>
+  </data>
+  <data name="lblMayText" xml:space="preserve">
+    <value>Mayo</value>
+  </data>
+  <data name="lblJuneText" xml:space="preserve">
+    <value>Junio</value>
+  </data>
+  <data name="lblJulyText" xml:space="preserve">
+    <value>Julio</value>
+  </data>
+  <data name="lblAugustText" xml:space="preserve">
+    <value>Agosto</value>
+  </data>
+  <data name="lblSeptemberText" xml:space="preserve">
+    <value>Septiembre</value>
+  </data>
+  <data name="lblOctoberText" xml:space="preserve">
+    <value>Octubre</value>
+  </data>
+  <data name="lblNovemberText" xml:space="preserve">
+    <value>Noviembre</value>
+  </data>
+  <data name="lblDecemberText" xml:space="preserve">
+    <value>Diciembre</value>
+  </data>
+  <data name="EditTask" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="langSpanish" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="licenceText" xml:space="preserve">
+    <value>Utiliza partes de código y elementos de UI de David Rossy.
+Las versiones anteriores a la 1.0 fueron probadas por Julien Terrapon.
+
+Este producto fue desarrollado originalmente en un contexto educativo,
+para el aprendizaje de
+la programación orientada a objetos.
+Es un software libre y se proporciona tal cual.
+
+
+Versión 1.8.3 - julio de 2026
+Desarrollado por Laurent Barraud.</value>
+  </data>
+  <data name="taskDescriptionFontSizeText" xml:space="preserve">
+    <value>Tamaño de fuente para la descripción de las tareas:</value>
+  </data>
+  <data name="SearchResults" xml:space="preserve">
+    <value>Resultados de búsqueda</value>
+  </data>
+  <data name="NoResultsFound" xml:space="preserve">
+    <value>Ningún resultado encontrado.</value>
+  </data>
+  <data name="importSqlFilter" xml:space="preserve">
+    <value>Script SQL (*.sql)|*.sql</value>
+  </data>
+  <data name="importSqlTitle" xml:space="preserve">
+    <value>Insertar datos desde un script SQL</value>
+  </data>
+  <data name="importSqlSuccess" xml:space="preserve">
+    <value>Datos insertados correctamente en la base de datos.</value>
+  </data>
+  <data name="importSqlError" xml:space="preserve">
+    <value>Error al ejecutar el script SQL.</value>
+  </data>
+  <data name="lnkInsertTasksFromSqlText" xml:space="preserve">
+    <value>Insertar tareas desde un script SQL</value>
+  </data>
+  <data name="deleteAllTopicsWarning" xml:space="preserve">
+    <value>¿Desea realmente eliminar todos los temas y todas las tareas asociadas?</value>
+  </data>
+  <data name="deleteAllTopicsTitle" xml:space="preserve">
+    <value>Eliminar todos los temas</value>
+  </data>
+  <data name="deleteAllTopicsSuccess" xml:space="preserve">
+    <value>Todos los temas y tareas han sido eliminados.</value>
+  </data>
+  <data name="deleteAllTopicsError" xml:space="preserve">
+    <value>Error al eliminar todos los temas.</value>
+  </data>
+  <data name="success" xml:space="preserve">
+    <value>Éxito</value>
+  </data>
+  <data name="SearchCrashedNoResults" xml:space="preserve">
+    <value>La búsqueda falló. No hay resultados disponibles.</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="ValidateTask" xml:space="preserve">
+    <value>Validar</value>
+  </data>
+  <data name="DeleteTask" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="ReassignTask" xml:space="preserve">
+    <value>Reasignar</value>
+  </data>
+  <data name="exportSqlFilter" xml:space="preserve">
+    <value>Archivo SQL (*.sql)|*.sql</value>
+  </data>
+  <data name="exportSqlError" xml:space="preserve">
+    <value>Error al exportar SQL: {0}</value>
+  </data>
+  <data name="exportSqlTitle" xml:space="preserve">
+    <value>Exportar todos los datos</value>
+  </data>
+  <data name="lnkExportTasksToSqlText" xml:space="preserve">
+    <value>Exportar todas las tareas en un script SQL</value>
+  </data>
+  <data name="exportSqlSuccess" xml:space="preserve">
+    <value>Exportación completada con éxito.</value>
+  </data>
+  <data name="lnkChangeAppColorsText" xml:space="preserve">
+    <value>Personalizar los colores de la aplicación</value>
+  </data>
+  <data name="CustomizeAppColors" xml:space="preserve">
+    <value>Personalizar los colores de la aplicación</value>
+  </data>
+  <data name="ColorOfMainWindowBackground" xml:space="preserve">
+    <value>Fondo ventana principal</value>
+  </data>
+  <data name="ColorOfRightPanelBackground" xml:space="preserve">
+    <value>Fondo panel lateral</value>
+  </data>
+  <data name="ColorOfSecondaryWindowsBackground" xml:space="preserve">
+    <value>Fondo ventanas secundarias</value>
+  </data>
+  <data name="ColorOfTaskTitlesBackground" xml:space="preserve">
+    <value>Fondo títulos de tareas</value>
+  </data>
+  <data name="ColorOfInputFieldsBackground" xml:space="preserve">
+    <value>Fondo campos de entrada</value>
+  </data>
+  <data name="ColorOfPnlTaskDescriptionBackground" xml:space="preserve">
+    <value>Fondo descripción de tareas</value>
+  </data>
+  <data name="ColorOfPanelsAndTasksBorders" xml:space="preserve">
+    <value>Bordes de paneles y tareas</value>
+  </data>
+  <data name="ColorOfTaskTitles" xml:space="preserve">
+    <value>Texto títulos de tareas</value>
+  </data>
+  <data name="ColorOfInputFieldsText" xml:space="preserve">
+    <value>Texto campos de entrada</value>
+  </data>
+  <data name="ColorOfPnlTaskDescription" xml:space="preserve">
+    <value>Texto descripción de tareas</value>
+  </data>
+  <data name="ColorOfValidateButton" xml:space="preserve">
+    <value>Validar y cancelar botones</value>
+  </data>
+  <data name="ColorOfBirthdayCalendarBackground" xml:space="preserve">
+    <value>Fondo calendario</value>
+  </data>
+  <data name="ColorOfBirthdayCalendarSquaresPrimary" xml:space="preserve">
+    <value>Cuadros primarios</value>
+  </data>
+  <data name="ColorOfBirthdayCalendarSquaresSecondary" xml:space="preserve">
+    <value>Cuadros secundarios</value>
+  </data>
+  <data name="ColorOfBirthdayCalendarSquaresTertiary" xml:space="preserve">
+    <value>Cuadros terciarios</value>
+  </data>
+  <data name="ColorOfBirthdayCalendarText" xml:space="preserve">
+    <value>Texto calendario</value>
+  </data>
+  <data name="SelectPreSetTheme" xml:space="preserve">
+    <value>Seleccionar un tema predefinido</value>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>Oscuro</value>
+  </data>
+  <data name="BlueTheme" xml:space="preserve">
+    <value>Azul</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+</root>

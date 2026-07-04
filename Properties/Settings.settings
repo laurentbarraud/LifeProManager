@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LifeProManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="appLanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en</Value>
+    </Setting>
+    <Setting Name="exportMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="taskDescriptionFontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="colorOfMainWindowBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#F5F7FA</Value>
+    </Setting>
+    <Setting Name="colorOfRightPanelBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#F5F7FA</Value>
+    </Setting>
+    <Setting Name="colorOfSecondaryWindowsBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#E6EBEF</Value>
+    </Setting>
+    <Setting Name="colorOfPanelsBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFFFFF</Value>
+    </Setting>
+    <Setting Name="colorOfInputFieldsBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFFFFF</Value>
+    </Setting>
+    <Setting Name="colorOfValidateButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#B6C0C1</Value>
+    </Setting>
+    <Setting Name="colorOfBirthdayCalendarText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#355A62</Value>
+    </Setting>
+    <Setting Name="colorOfBirthdayCalendarSquaresPrimary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#E4F3ED</Value>
+    </Setting>
+    <Setting Name="colorOfBirthdayCalendarSquaresSecondary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#F1F3F8</Value>
+    </Setting>
+    <Setting Name="colorOfBirthdayCalendarSquaresTertiary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FBFCE9</Value>
+    </Setting>
+    <Setting Name="colorOfBirthdayCalendarBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#F5F7FA</Value>
+    </Setting>
+    <Setting Name="colorOfLblTaskDescriptionBackground" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFFFFF</Value>
+    </Setting>
+    <Setting Name="colorOfLblTaskDescriptionText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#000000</Value>
+    </Setting>
+    <Setting Name="colorOfTaskTitlesText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#000000</Value>
+    </Setting>
+    <Setting Name="colorOfInputFieldsText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#000000</Value>
+    </Setting>
+    <Setting Name="selectedThemeIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

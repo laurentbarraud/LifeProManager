@@ -1,0 +1,46 @@
+﻿# [bin_obj]
+bin/
+obj/
+
+# [vs_cache]
+.vs/
+*.user
+*.suo
+
+# [build_output]
+publish/
+Release/
+Debug/
+
+# [logs]
+*.log
+
+# [sqlite_db]
+*.db
+*.db-shm
+*.db-wal
+
+# [temp_files]
+*.tmp
+*.temp
+
+# [appdata_generated]
+LifeProManager/Settings/*
+LifeProManager/Cache/*
+
+# [resx_autogen]
+*.resources
+*.resx.bin
+
+# [publish_artifacts]
+*.exe
+*.dll
+*.pdb
+
+# [dotnet_tools]
+*.deps.json
+*.runtimeconfig.json
+
+# [nuget]
+*.nupkg
+packages/
