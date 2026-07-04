@@ -324,6 +324,8 @@
             Name = "frmBirthdayCalendar";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Calendrier d'anniversaires";
+            Load += frmBirthdayCalendar_Load;
             ResumeLayout(false);
         }
 

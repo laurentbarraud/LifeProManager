@@ -1,17 +1,22 @@
 /// <file>Program.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using Microsoft.Data.Sqlite;
 using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+
 
 namespace LifeProManager
 {
     static class Program
     {
+
+        [DllImport("kernel32.dll")]
+        public static extern bool AllocConsole();
         public static ApplicationContext appContext = null!;
         public static DBConnection DbConn = null!;
 

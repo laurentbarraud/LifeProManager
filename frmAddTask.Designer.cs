@@ -162,16 +162,20 @@
             lblYear.Size = new Size(62, 38);
             lblYear.TabIndex = 12;
             lblYear.Text = "Année";
+            lblYear.TextAlign = ContentAlignment.MiddleCenter;
             lblYear.Visible = false;
             // 
             // numYear
             // 
             numYear.Font = new Font("Microsoft Sans Serif", 10.2F);
-            numYear.Location = new Point(357, 426);
+            numYear.Location = new Point(357, 432);
             numYear.Margin = new Padding(3, 4, 3, 4);
+            numYear.Maximum = new decimal(new int[] { 2500, 0, 0, 0 });
+            numYear.Minimum = new decimal(new int[] { 1900, 0, 0, 0 });
             numYear.Name = "numYear";
             numYear.Size = new Size(70, 27);
             numYear.TabIndex = 13;
+            numYear.Value = new decimal(new int[] { 1985, 0, 0, 0 });
             numYear.Visible = false;
             // 
             // cmdCancel

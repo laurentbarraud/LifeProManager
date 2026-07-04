@@ -1,7 +1,7 @@
 ﻿/// <file>frmCustomizeAppColors.cs</file>
 /// <author>Laurent Barraud</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using System;
 using System.Configuration;
@@ -62,7 +62,7 @@ namespace LifeProManager
                 Properties.Settings.Default.colorOfSecondaryWindowsBackground = "#F7F7F7";
                 Properties.Settings.Default.colorOfPanelsBackground = "#FFFFFF";
                 Properties.Settings.Default.colorOfInputFieldsBackground = "#FFFFFF";
-                Properties.Settings.Default.colorOfLblTaskDescriptionBackground = "#FCFAF3";
+                Properties.Settings.Default.colorOfLblTaskDescriptionBackground = "#EAE8C6";
                 Properties.Settings.Default.colorOfInputFieldsText = "#1E1E1E";
                 Properties.Settings.Default.colorOfTaskTitlesText = "#2A2A2A";
                 Properties.Settings.Default.colorOfLblTaskDescriptionText = "#6E6E6E";

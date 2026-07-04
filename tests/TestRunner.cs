@@ -1,7 +1,7 @@
 ﻿/// <file>TestRunner.cs</file>
 /// <author>Laurent Barraud</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using LifeProManager;
 using System;
@@ -9,8 +9,6 @@ using System.Collections.Generic;
 
 public static class TestRunner
 {
-    // This method is called when the user holds CTRL and clicks on the Search button in the UI.
-    // It runs a series of 26 tests, each with a different query.
     public static void RunAll(SmartSearch engine)
     {
         Console.WriteLine("=== SMARTSEARCH A to Z TEST RUNNER ===");
@@ -46,35 +44,30 @@ public static class TestRunner
             { "Z", "anniversaire" }
         };
 
-        foreach (var keyValuePair in tests)
+        foreach (var kv in tests)
         {
-            string testId = keyValuePair.Key;
-            string query = keyValuePair.Value;
+            string testId = kv.Key;
+            string query = kv.Value;
 
             List<Tasks> taskResults = engine.Search(query);
 
-            bool taskResultsIsZero = taskResults.Count == 0;
-
-            // Red if no result
-            if (taskResultsIsZero)
+            if (taskResults.Count == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"{testId} | \"{query}\" → 0 result(s) ❌");
-                Console.ResetColor();
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"{testId} | \"{query}\" → {taskResults.Count} result(s)");
-                Console.ResetColor();
 
-                // Display titles
-                foreach (var task in taskResults)
+                foreach (Tasks t in taskResults)
                 {
-                    Console.WriteLine($"   - {task.Title}");
+                    Console.WriteLine($"   - {t.Title}");
                 }
             }
 
+            Console.ResetColor();
             Console.WriteLine();
         }
 

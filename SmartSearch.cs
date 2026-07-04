@@ -1,7 +1,7 @@
 ﻿/// <file>SmartSearch.cs</file>
 /// <author>Laurent Barraud</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using Microsoft.Data.Sqlite;
 using System.Globalization;

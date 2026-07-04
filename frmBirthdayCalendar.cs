@@ -1,7 +1,7 @@
 ﻿/// <file>frmBirthdayCalendar.cs</file>
 /// <author>Laurent Barraud</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using System;
 using System.Collections.Generic;
@@ -22,12 +22,12 @@ namespace LifeProManager
         {
             _frmMain = callingForm as frmMain;
             InitializeComponent();
+            LoadLocalizedStrings();
             ApplyStoredColors();
         }
 
         private void frmBirthdayCalendar_Load(object sender, EventArgs e)
         {
-            LoadLocalizedStrings();
 
             // Fills the birthdays progressively
             CreateBirthdaysLayout(dbConn.ReadTask("WHERE Priorities_id == 4 AND Status_id == 1"));

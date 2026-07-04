@@ -490,7 +490,7 @@
             cmdAddTask.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdAddTask.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdAddTask.FlatStyle = FlatStyle.Flat;
-            cmdAddTask.Location = new Point(121, 598);
+            cmdAddTask.Location = new Point(120, 598);
             cmdAddTask.Name = "cmdAddTask";
             cmdAddTask.Size = new Size(49, 38);
             cmdAddTask.TabIndex = 0;
@@ -639,7 +639,7 @@
             // 
             // lblTaskDescription
             // 
-            lblTaskDescription.BackColor = Color.White;
+            lblTaskDescription.BackColor = Color.FromArgb(234, 232, 198);
             lblTaskDescription.Font = new Font("Segoe UI", 10.2F);
             lblTaskDescription.ForeColor = Color.Black;
             lblTaskDescription.Location = new Point(28, 8);
@@ -710,6 +710,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Life Pro Manager";
             Shown += frmMain_Shown;
+            KeyDown += frmMain_KeyDown;
             pnlContainer.ResumeLayout(false);
             tabMain.ResumeLayout(false);
             tabDates.ResumeLayout(false);

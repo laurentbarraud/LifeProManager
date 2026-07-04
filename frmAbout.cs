@@ -1,7 +1,7 @@
 ﻿/// <file>frmAbout.cs</file>
 /// <author>Laurent Barraud</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using System;
 using System.Drawing.Drawing2D;

@@ -1,7 +1,7 @@
 ﻿/// <file>frmMain.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
 /// <version>1.8.3</version>
-/// <date>July 4th, 2026</date>
+/// <date>July 5th, 2026</date>
 
 using Microsoft.Win32;
 using System.ComponentModel;
@@ -1328,6 +1328,7 @@ namespace LifeProManager
         {
             if (Control.ModifierKeys == Keys.Control)
             {
+                Program.AllocConsole();
                 TestRunner.RunAll(new SmartSearch());
                 return;
             }

@@ -21,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="LPM_DB.db" />
+  </ItemGroup>
+
+  <ItemGroup>
 
     <!-- Settings -->
     <None Include="Properties\Settings.settings">
@@ -29,9 +33,6 @@
     </None>
 
     <!-- SQLite DB -->
-    <None Include="LPM_DB.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
 
   </ItemGroup>
 
