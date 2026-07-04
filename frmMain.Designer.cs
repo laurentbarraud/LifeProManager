@@ -19,8 +19,8 @@
             pnlContainer = new Panel();
             tabMain = new TabControl();
             tabDates = new TabPage();
-            pnlToday = new Panel();
             pnlWeek = new Panel();
+            pnlToday = new Panel();
             lblWeek = new Label();
             lblToday = new Label();
             tabTopics = new TabPage();
@@ -113,8 +113,8 @@
             // tabDates
             // 
             tabDates.BackColor = Color.FromArgb(245, 247, 250);
-            tabDates.Controls.Add(pnlToday);
             tabDates.Controls.Add(pnlWeek);
+            tabDates.Controls.Add(pnlToday);
             tabDates.Controls.Add(lblWeek);
             tabDates.Controls.Add(lblToday);
             tabDates.ImageKey = "calendar.png";
@@ -125,6 +125,16 @@
             tabDates.TabIndex = 0;
             tabDates.Text = "Dates";
             // 
+            // pnlWeek
+            // 
+            pnlWeek.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlWeek.AutoScroll = true;
+            pnlWeek.BackColor = Color.White;
+            pnlWeek.Location = new Point(23, 377);
+            pnlWeek.Name = "pnlWeek";
+            pnlWeek.Size = new Size(631, 225);
+            pnlWeek.TabIndex = 4;
+            // 
             // pnlToday
             // 
             pnlToday.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -134,16 +144,6 @@
             pnlToday.Name = "pnlToday";
             pnlToday.Size = new Size(631, 234);
             pnlToday.TabIndex = 0;
-            // 
-            // pnlWeek
-            // 
-            pnlWeek.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pnlWeek.AutoScroll = true;
-            pnlWeek.BackColor = Color.White;
-            pnlWeek.Location = new Point(23, 377);
-            pnlWeek.Name = "pnlWeek";
-            pnlWeek.Size = new Size(631, 225);
-            pnlWeek.TabIndex = 1;
             // 
             // lblWeek
             // 
@@ -639,7 +639,7 @@
             // 
             // lblTaskDescription
             // 
-            lblTaskDescription.BackColor = Color.FromArgb(234, 232, 198);
+            lblTaskDescription.BackColor = Color.FromArgb(243, 239, 218);
             lblTaskDescription.Font = new Font("Segoe UI", 10.2F);
             lblTaskDescription.ForeColor = Color.Black;
             lblTaskDescription.Location = new Point(28, 8);
@@ -709,6 +709,7 @@
             Padding = new Padding(13, 12, 13, 12);
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Life Pro Manager";
+            Load += frmMain_Load;
             Shown += frmMain_Shown;
             KeyDown += frmMain_KeyDown;
             pnlContainer.ResumeLayout(false);
@@ -736,7 +737,6 @@
         private TabControl tabMain;
 
         private TabPage tabDates;
-        internal Panel pnlWeek;
         internal Panel pnlToday;
         private Label lblWeek;
         private Label lblToday;
@@ -783,6 +783,7 @@
         private ComboBox cboAppLanguage;
         private CheckBox chkTopics;
         private CheckBox chkDescriptions;
+        internal Panel pnlWeek;
     }
 }
 

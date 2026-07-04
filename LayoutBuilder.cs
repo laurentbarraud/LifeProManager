@@ -373,7 +373,7 @@ namespace LifeProManager
         /// </summary>
         public void CreateTasksLayout(List<Tasks> tasksList, LayoutType targetLayout)
         {
-            Panel? targetPanel = ResolveTargetPanel(targetLayout);
+            Panel targetPanel = ResolveTargetPanel(targetLayout);
 
             if (targetPanel == null)
             {
@@ -592,9 +592,8 @@ namespace LifeProManager
 
         /// <summary>
         /// Returns the panel corresponding to the requested layout.
-        /// Also clears selection when using the search layout.
         /// </summary>
-        private Panel? ResolveTargetPanel(LayoutType targetLayout)
+        private Panel ResolveTargetPanel(LayoutType targetLayout)
         {
             if (targetLayout == LayoutType.Today)
             {
@@ -622,8 +621,11 @@ namespace LifeProManager
                 return _frmMain.pnlToday;
             }
 
-            return null;
+            // Default fallback to Today panel if the layout type is unrecognized
+            return _frmMain.pnlToday;
         }
+
+
 
         /// <summary>
         /// Parses the task deadline into a DateTime.

@@ -62,7 +62,7 @@ namespace LifeProManager
                 Properties.Settings.Default.colorOfSecondaryWindowsBackground = "#F7F7F7";
                 Properties.Settings.Default.colorOfPanelsBackground = "#FFFFFF";
                 Properties.Settings.Default.colorOfInputFieldsBackground = "#FFFFFF";
-                Properties.Settings.Default.colorOfLblTaskDescriptionBackground = "#EAE8C6";
+                Properties.Settings.Default.colorOfLblTaskDescriptionBackground = "#EFF0E3";
                 Properties.Settings.Default.colorOfInputFieldsText = "#1E1E1E";
                 Properties.Settings.Default.colorOfTaskTitlesText = "#2A2A2A";
                 Properties.Settings.Default.colorOfLblTaskDescriptionText = "#6E6E6E";
@@ -105,7 +105,7 @@ namespace LifeProManager
                 Properties.Settings.Default.colorOfSecondaryWindowsBackground = "#E6EBEF";
                 Properties.Settings.Default.colorOfPanelsBackground = "#FFFFFF";
                 Properties.Settings.Default.colorOfInputFieldsBackground = "#FFFFFF";
-                Properties.Settings.Default.colorOfLblTaskDescriptionBackground = "#F1E9D2";
+                Properties.Settings.Default.colorOfLblTaskDescriptionBackground = "#F3EFDA";
                 Properties.Settings.Default.colorOfInputFieldsText = "#1E1E1E";
                 Properties.Settings.Default.colorOfTaskTitlesText = "#2F4F57";
                 Properties.Settings.Default.colorOfLblTaskDescriptionText = "#728FA7";
