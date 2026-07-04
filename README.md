@@ -1,38 +1,12 @@
 ## Life Pro Manager
-A to‑do list manager in C# with WinForms and a SQLite database. 
+A to-do list manager in C# with WinForms and a SQLite database for offline storage.
+
+Includes birthday reminders and topic-based lists.
+
+This fork is the actively maintained version, as the original co-author has stopped development.
 
 [![Release](https://img.shields.io/badge/release-stable-64B07B)](https://github.com/laurentbarraud/LifeProManager/releases)
 [![Downloads](https://img.shields.io/github/downloads/laurentbarraud/LifeProManager/latest/total?color=88aacc&style=flat)](https://github.com/laurentbarraud/LifeProManager/releases/latest)
-
-Life Pro Manager is a lightweight productivity tool built with C#, WinForms, and SQLite.
-Focused on speed, simplicity, and a clean user experience.
-
-### ✨ Features
-
-- 📝 To‑Do Management
-- Create, edit, and delete tasks
-- Quick‑add window for fast task entry
-- Keyboard navigation for efficient workflow (↑ ↓ Enter Esc)
-
-🔍 SmartSearch
-- Instant filtering as you type
-- Fuzzy matching on task titles
-- Zero‑popup design for uninterrupted focus
-
-🎨 Theme System
-- Multiple color themes
-- Smooth runtime recolorization
-- Minimalist UI without intrusive dialogs
-
-💾 Local SQLite Storage
-- Zero configuration
-- Fast and reliable
-- Fully offline
-
-🧪 Internal Test Runner
-- Built‑in window for testing core logic
-- Quick checks during development
-- Helps maintain stability before releases
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/laurentbarraud/LifeProManager/master/doc/main-window.jpg"
@@ -47,3 +21,31 @@ width="200" />
 alt="Add task window"
 width="300" />
 </p>
+
+### Features
+- 🚀 Fast and responsive — even with 1,000+ tasks
+- 🧩 Straightforward architecture with clear responsibilities and predictable UI logic
+- 🔍 Task search engine with natural language date parsing, fuzzy lexical matching and semantic relevance scoring.
+- 🧪 Built‑in test runner validating all search cases at once using 40 mock‑tasks, which can all be inserted via the provided script.
+- 📦 Smart file-based architecture — everything fits in a single, portable file
+- 📤 Export tasks to a clean, date‑sorted Html page
+- 🎂 Birthday calendar listing all names and the age they’ll reach this year
+- 🪟 Responsive main window with a sliding right panel and persistent user‑defined width
+- 🌐 Localized in English, French and Spanish.
+
+(the MonthCalendar control follows the OS culture settings, as per WinForms design).
+
+### How to Run
+- Clone this repository with Git
+- Open in Visual Studio 2022
+- Build the project with CTRL+B and run it.
+
+### Download
+Go to the Releases section to download a ready-to-use installer,
+designed for x64-based Windows systems (Windows 7 and above).
+
+### Contributing
+For any suggestion of improvement or bug report, feel free to:
+- Open an issue
+- Submit a PR if you can code it yourself 
+- Or contact me by mail.
