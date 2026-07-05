@@ -31,6 +31,7 @@ width="300" />
 - 📤 Export tasks to a clean, date‑sorted Html page
 - 🎂 Birthday calendar listing all names and the age they’ll reach this year
 - 🪟 Responsive main window with a sliding right panel and persistent user‑defined width
+- 🎨 Fully customizable color scheme with pre-made themes for instantly changing the application's appearance
 - 🌐 Localized in English, French and Spanish.
 
 (the MonthCalendar control follows the OS culture settings, as per WinForms design).
