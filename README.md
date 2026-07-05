@@ -41,7 +41,7 @@ width="300" />
 - Build the project with CTRL+B and run it.
 
 ### Download
-Go to the Releases section to download a ready-to-use installer,
+Go to the [Releases](https://github.com/laurentbarraud/LifeProManager/releases) section to download a ready-to-use installer,
 designed for x64-based Windows systems (Windows 7 and above).
 
 ### Contributing
