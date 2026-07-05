@@ -490,7 +490,7 @@
             cmdAddTask.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdAddTask.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdAddTask.FlatStyle = FlatStyle.Flat;
-            cmdAddTask.Location = new Point(120, 598);
+            cmdAddTask.Location = new Point(118, 598);
             cmdAddTask.Name = "cmdAddTask";
             cmdAddTask.Size = new Size(49, 38);
             cmdAddTask.TabIndex = 0;
@@ -507,7 +507,7 @@
             cmdSearch.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdSearch.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdSearch.FlatStyle = FlatStyle.Flat;
-            cmdSearch.Location = new Point(197, 473);
+            cmdSearch.Location = new Point(195, 473);
             cmdSearch.Name = "cmdSearch";
             cmdSearch.Size = new Size(34, 34);
             cmdSearch.TabIndex = 1;
@@ -552,7 +552,7 @@
             cmdBirthdayCalendar.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdBirthdayCalendar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdBirthdayCalendar.FlatStyle = FlatStyle.Flat;
-            cmdBirthdayCalendar.Location = new Point(126, 468);
+            cmdBirthdayCalendar.Location = new Point(124, 468);
             cmdBirthdayCalendar.Name = "cmdBirthdayCalendar";
             cmdBirthdayCalendar.Size = new Size(38, 38);
             cmdBirthdayCalendar.TabIndex = 4;
@@ -590,7 +590,7 @@
             cmdNextDay.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdNextDay.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdNextDay.FlatStyle = FlatStyle.Flat;
-            cmdNextDay.Location = new Point(197, 400);
+            cmdNextDay.Location = new Point(196, 400);
             cmdNextDay.Name = "cmdNextDay";
             cmdNextDay.Size = new Size(28, 26);
             cmdNextDay.TabIndex = 6;
@@ -609,7 +609,7 @@
             cmdToday.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdToday.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdToday.FlatStyle = FlatStyle.Flat;
-            cmdToday.Location = new Point(129, 399);
+            cmdToday.Location = new Point(128, 399);
             cmdToday.Name = "cmdToday";
             cmdToday.Size = new Size(30, 30);
             cmdToday.TabIndex = 7;
@@ -628,7 +628,7 @@
             cmdPreviousDay.FlatAppearance.MouseDownBackColor = Color.Transparent;
             cmdPreviousDay.FlatAppearance.MouseOverBackColor = Color.Transparent;
             cmdPreviousDay.FlatStyle = FlatStyle.Flat;
-            cmdPreviousDay.Location = new Point(62, 400);
+            cmdPreviousDay.Location = new Point(61, 400);
             cmdPreviousDay.Name = "cmdPreviousDay";
             cmdPreviousDay.Size = new Size(28, 26);
             cmdPreviousDay.TabIndex = 8;
