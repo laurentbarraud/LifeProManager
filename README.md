@@ -23,17 +23,20 @@ width="300" />
 </p>
 
 ### Features
-- 🚀 Fast and responsive — even with 1,000+ tasks. 
-- 🧩 Straightforward architecture with clear responsibilities and predictable UI logic. 
-- 📦 Smart file-based architecture — everything fits in a single, portable file. 
-- 🔍 Task search engine with natural language date parsing, fuzzy lexical matching and semantic relevance scoring.
-- 🧪 Built‑in test runner validating all search cases at once using 40 mock‑tasks, which can all be inserted via the provided script.
-- 📤 Export tasks to a clean, date-sorted HTML page for easy access on the go.
-- 📤 Export tasks to an sql script for personal backups.
-- 🎂 Birthday calendar listing all names and the age they’ll reach this year. 
-- 🪟 Responsive main window with a sliding right panel and persistent user‑defined width
-- 🎨 Fully customizable color scheme with pre-made themes for instantly changing the application's appearance
-- 🌐 Localized in English, French and Spanish.
+- 🚀 Fast, even with over 1,000 tasks.
+- 🧩 Straightforward architecture with clear responsibilities and predictable UI logic.
+- 📦 Smart file‑based architecture — everything fits in a single, portable file.
+- 🔍 Task search engine with natural language date parsing, fuzzy lexical matching, and semantic relevance scoring.
+- 🧪 Built‑in test runner validating all search cases at once using 40 mock tasks, which can all be inserted via the provided script.
+- 📤 Export tasks to a clean, date‑sorted HTML page for easy access on the go.
+- 📤 Export tasks to an SQL script for personal backups.
+- 🎂 Birthday calendar listing all names and the age they’ll reach this year.
+- 📜 Panel visible only when a task is selected, letting you read key details at the last moment — right before leaving for an appointment, for example.
+- 🪟 Responsive main window with a sliding right panel and persistent user‑defined width.
+- 🎨 Fully customizable color scheme with pre‑made themes for instantly changing the application's appearance.
+- 🖱️ Contextual menu for secondary actions, adapted to the panel the task belongs to.
+- ⌨️ Keyboard navigation and shortcuts to manage your tasks (up/down arrows, Enter, Delete key)
+- 🌐 Localized in English, French, and Spanish.
 
 (the MonthCalendar control follows the OS culture settings, as per WinForms design).
 
