@@ -1,12 +1,16 @@
 ## Life Pro Manager
 A to-do list manager in C# with WinForms and a SQLite database for offline storage.
 
-Includes birthday reminders and topic-based lists.
+Includes topic-based lists and birthdays reminder.
 
 This fork is the actively maintained version, as the original co-author has stopped development.
 
-[![Release](https://img.shields.io/badge/release-stable-64B07B)](https://github.com/laurentbarraud/LifeProManager/releases)
-[![Downloads](https://img.shields.io/github/downloads/laurentbarraud/LifeProManager/latest/total?color=88aacc&style=flat)](https://github.com/laurentbarraud/LifeProManager/releases/latest)
+  <a href="https://github.com/laurentbarraud/LifeProManager/releases">
+  <img src="https://img.shields.io/badge/release-stable-64B07B" alt="Release"></a>
+<a href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0">
+  <img src="https://img.shields.io/badge/.NET-9-4B1D7A" alt=".NET 9"></a>
+<a href="https://github.com/laurentbarraud/LifeProManager/releases/latest">
+  <img src="https://img.shields.io/github/downloads/laurentbarraud/LifeProManager/latest/total?color=88aacc&style=flat" alt="Downloads"></a>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/laurentbarraud/LifeProManager/master/doc/main-window.jpg"
@@ -25,17 +29,17 @@ width="300" />
 ### Features
 - 🚀 Fast, even with over 1,000 tasks.
 - 🧩 Straightforward architecture with clear responsibilities and predictable UI logic.
-- 📦 Smart file‑based architecture — everything fits in a single, portable file.
-- 🔍 Task search engine with natural language date parsing, fuzzy lexical matching, and semantic relevance scoring.
+- 📦 Everything fits in a single DB file.
+- 🔍 Task search engine with natural‑language date parsing (similar to Outlook’s agenda), fuzzy lexical matching (similar to YouTube search), and semantic relevance scoring for results display.
 - 🧪 Built‑in test runner validating all search cases at once using 40 mock tasks, which can all be inserted via the provided script.
-- 📤 Export tasks to a clean, date‑sorted HTML page for easy access on the go.
+- 📤 Export tasks to a clean, date‑sorted webpage for easy access on the go.
 - 📤 Export tasks to an SQL script for personal backups.
 - 🎂 Birthday calendar listing all names and the age they’ll reach this year.
 - 📜 Panel visible only when a task is selected, letting you read key details at the last moment — right before leaving for an appointment, for example.
 - 🪟 Responsive main window with a sliding right panel and persistent user‑defined width.
-- 🎨 Fully customizable color scheme with pre‑made themes for instantly changing the application's appearance.
 - 🖱️ Contextual menu for secondary actions, adapted to the panel the task belongs to.
 - ⌨️ Keyboard navigation and shortcuts to manage your tasks (up/down arrows, Enter, Delete key)
+- 🎨 Customizable colors with pre‑made themes for instantly changing the application's appearance.
 - 🌐 Localized in English, French, and Spanish.
 
 (the MonthCalendar control follows the OS culture settings, as per WinForms design).
