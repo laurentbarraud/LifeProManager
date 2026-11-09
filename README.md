@@ -29,7 +29,7 @@ width="300" />
 - 🧩 Straightforward architecture with clear responsibilities and predictable UI logic.
 - 📦 Everything fits in a single DB file.
 - 🔍 Task search engine with natural‑language date parsing (similar to Outlook’s agenda), fuzzy lexical matching and semantic relevance scoring for results display.
-- 🧪 Built‑in test runner validating all search cases at once using 40 mock tasks, which can all be inserted via the provided script.
+- 🧪 Built-in test runner validating all search cases at once using 40 mock tasks, which can all be inserted via the provided [script](https://github.com/laurentbarraud/LifeProManager/blob/master/insertMockData.sql).
 - 📤 Export tasks to a date‑sorted webpage for easy access on the go.
 - 📤 Export tasks to an SQL script for personal backups.
 - 🎂 Birthday calendar listing all names and the age they’ll reach this year.
