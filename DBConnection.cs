@@ -1,7 +1,7 @@
 ﻿/// <file>DBConnection.cs</file>
 /// <author>Laurent Barraud, David Rossy and Julien Terrapon</author>
-/// <version>1.8.3</version>
-/// <date>July 5th, 2026</date>
+/// <version>1.8.4</version>
+/// <date>November 13th, 2026</date>
 
 using System;
 using System.Data;
@@ -81,80 +81,6 @@ namespace LifeProManager
             }
 
             return true;
-        }
-
-        /// <summary>
-        /// Creates the database file in the app's installation folder
-        /// </summary>
-        public void CreateFile()
-        {
-            string dbPath = Path.Combine(Application.StartupPath, "LPM_DB.db");
-
-            if (!File.Exists(dbPath))
-            {
-                using var conn = new SqliteConnection($"Data Source={dbPath}");
-                conn.Open();
-            }
-        }
-
-        /// <summary>
-        /// Creates all database tables and inserts the initial data.
-        /// This method is used when the database is missing or considered invalid.
-        /// </summary>
-        public void CreateTablesAndInsertInitialData()
-        {
-            using (SqliteCommand cmd = sqliteConn.CreateCommand())
-            {
-                cmd.CommandText =
-                @"
-                    BEGIN TRANSACTION;
-
-                    DROP TABLE IF EXISTS Status;
-                    CREATE TABLE Status (
-                        id INTEGER PRIMARY KEY,
-                        denomination TEXT NOT NULL
-                    );
-
-                    DROP TABLE IF EXISTS Priorities;
-                    CREATE TABLE Priorities (
-                        id INTEGER PRIMARY KEY,
-                        denomination TEXT NOT NULL
-                    );
-
-                    DROP TABLE IF EXISTS Lists;
-                    CREATE TABLE Lists (
-                        id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        title TEXT NOT NULL
-                    );
-
-                    DROP TABLE IF EXISTS Tasks;
-                    CREATE TABLE Tasks (
-                        id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        title TEXT NOT NULL,
-                        description TEXT DEFAULT NULL,
-                        deadline TEXT DEFAULT NULL,
-                        validationDate TEXT DEFAULT NULL,
-                        Priorities_id INTEGER NOT NULL,
-                        Lists_id INTEGER NOT NULL,
-                        Status_id INTEGER NOT NULL,
-                        FOREIGN KEY(Status_id) REFERENCES Status(id),
-                        FOREIGN KEY(Priorities_id) REFERENCES Priorities(id),
-                        FOREIGN KEY(Lists_id) REFERENCES Lists(id)
-                    );
-
-                    INSERT INTO Priorities(id, denomination) VALUES (0, '');
-                    INSERT INTO Priorities(id, denomination) VALUES (1, 'Important');
-                    INSERT INTO Priorities(id, denomination) VALUES (2, 'Repeatable');
-                    INSERT INTO Priorities(id, denomination) VALUES (3, 'ImportantAndRepeatable');
-                    INSERT INTO Priorities(id, denomination) VALUES (4, 'Birthday');
-
-                    INSERT INTO Status(id, denomination) VALUES (1, 'Open');
-                    INSERT INTO Status(id, denomination) VALUES (2, 'Done');
-
-                    COMMIT;";
-
-                cmd.ExecuteNonQuery();
-            }
         }
 
         public int CountTotalTasksToComplete()
